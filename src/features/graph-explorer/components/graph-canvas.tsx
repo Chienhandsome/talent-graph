@@ -55,6 +55,15 @@ interface DragState {
   viewportY: number;
 }
 
+interface NodeDragState {
+  pointerId: number;
+  nodeId: string;
+  clientX: number;
+  clientY: number;
+  nodeX: number;
+  nodeY: number;
+}
+
 const VIEW_WIDTH = 1200;
 const VIEW_HEIGHT = 720;
 const LAYOUT_PADDING = 92;
@@ -101,6 +110,21 @@ function zoomAroundCenter(viewport: Viewport, requestedZoom: number): Viewport {
     zoom,
     x: VIEW_WIDTH / 2 - graphCenterX * zoom,
     y: VIEW_HEIGHT / 2 - graphCenterY * zoom,
+  };
+}
+
+function shortenEdge(source: GraphPosition, target: GraphPosition) {
+  const deltaX = target.x - source.x;
+  const deltaY = target.y - source.y;
+  const length = Math.max(Math.hypot(deltaX, deltaY), 1);
+  const unitX = deltaX / length;
+  const unitY = deltaY / length;
+
+  return {
+    x1: source.x + unitX * 30,
+    y1: source.y + unitY * 30,
+    x2: target.x - unitX * 34,
+    y2: target.y - unitY * 34,
   };
 }
 
@@ -217,7 +241,9 @@ export const GraphCanvas = forwardRef<GraphCanvasHandle, GraphCanvasProps>(
     >("loading");
     const [layoutRevision, setLayoutRevision] = useState(0);
     const [viewport, setViewport] = useState<Viewport>(DEFAULT_VIEWPORT);
+    const [hoveredNodeId, setHoveredNodeId] = useState<string | null>(null);
     const dragRef = useRef<DragState | null>(null);
+    const nodeDragRef = useRef<NodeDragState | null>(null);
 
     useEffect(() => {
       let disposed = false;
@@ -332,6 +358,30 @@ export const GraphCanvas = forwardRef<GraphCanvasHandle, GraphCanvasProps>(
       return connected;
     }, [selectedNodeId, visibleEdges]);
 
+    const visibleNodes = useMemo(
+      () =>
+        graph.nodes
+          .filter((node) => visibleNodeIds.has(node.id))
+          .sort((left, right) => {
+            const layer = (nodeId: string) => {
+              if (nodeId === hoveredNodeId) return 4;
+              if (nodeId === selectedNodeId) return 3;
+              if (nodeId === graph.rootId) return 2;
+              if (connectedNodeIds.has(nodeId)) return 1;
+              return 0;
+            };
+            return layer(left.id) - layer(right.id);
+          }),
+      [
+        connectedNodeIds,
+        graph.nodes,
+        graph.rootId,
+        hoveredNodeId,
+        selectedNodeId,
+        visibleNodeIds,
+      ],
+    );
+
     useImperativeHandle(
       ref,
       () => ({
@@ -373,7 +423,9 @@ export const GraphCanvas = forwardRef<GraphCanvasHandle, GraphCanvasProps>(
       if (target.closest("[data-graph-node]")) {
         return;
       }
-      event.currentTarget.setPointerCapture(event.pointerId);
+      if (typeof event.currentTarget.setPointerCapture === "function") {
+        event.currentTarget.setPointerCapture(event.pointerId);
+      }
       dragRef.current = {
         pointerId: event.pointerId,
         clientX: event.clientX,
@@ -383,13 +435,55 @@ export const GraphCanvas = forwardRef<GraphCanvasHandle, GraphCanvasProps>(
       };
     }
 
+    function handleNodePointerDown(
+      event: PointerEvent<SVGGElement>,
+      nodeId: string,
+    ) {
+      const position = positions[nodeId];
+      if (!position) {
+        return;
+      }
+
+      event.preventDefault();
+      event.stopPropagation();
+      onSelectNode(nodeId);
+      const svg = event.currentTarget.ownerSVGElement;
+      if (svg && typeof svg.setPointerCapture === "function") {
+        svg.setPointerCapture(event.pointerId);
+      }
+      nodeDragRef.current = {
+        pointerId: event.pointerId,
+        nodeId,
+        clientX: event.clientX,
+        clientY: event.clientY,
+        nodeX: position.x,
+        nodeY: position.y,
+      };
+    }
+
     function handlePointerMove(event: PointerEvent<SVGSVGElement>) {
+      const bounds = event.currentTarget.getBoundingClientRect();
+      const scaleX = VIEW_WIDTH / Math.max(bounds.width, 1);
+      const scaleY = VIEW_HEIGHT / Math.max(bounds.height, 1);
+      const nodeDrag = nodeDragRef.current;
+      if (nodeDrag?.pointerId === event.pointerId) {
+        const nextX =
+          nodeDrag.nodeX +
+          ((event.clientX - nodeDrag.clientX) * scaleX) / viewport.zoom;
+        const nextY =
+          nodeDrag.nodeY +
+          ((event.clientY - nodeDrag.clientY) * scaleY) / viewport.zoom;
+        setPositions((current) => ({
+          ...current,
+          [nodeDrag.nodeId]: { x: nextX, y: nextY },
+        }));
+        return;
+      }
+
       const drag = dragRef.current;
       if (!drag || drag.pointerId !== event.pointerId) {
         return;
       }
-      const scaleX = VIEW_WIDTH / Math.max(event.currentTarget.clientWidth, 1);
-      const scaleY = VIEW_HEIGHT / Math.max(event.currentTarget.clientHeight, 1);
       setViewport((current) => ({
         ...current,
         x: drag.viewportX + (event.clientX - drag.clientX) * scaleX,
@@ -398,11 +492,17 @@ export const GraphCanvas = forwardRef<GraphCanvasHandle, GraphCanvasProps>(
     }
 
     function handlePointerEnd(event: PointerEvent<SVGSVGElement>) {
+      if (nodeDragRef.current?.pointerId === event.pointerId) {
+        nodeDragRef.current = null;
+      }
       if (dragRef.current?.pointerId === event.pointerId) {
         dragRef.current = null;
-        if (event.currentTarget.hasPointerCapture(event.pointerId)) {
-          event.currentTarget.releasePointerCapture(event.pointerId);
-        }
+      }
+      if (
+        typeof event.currentTarget.hasPointerCapture === "function" &&
+        event.currentTarget.hasPointerCapture(event.pointerId)
+      ) {
+        event.currentTarget.releasePointerCapture(event.pointerId);
       }
     }
 
@@ -425,7 +525,7 @@ export const GraphCanvas = forwardRef<GraphCanvasHandle, GraphCanvasProps>(
           <svg
             data-testid="graph-svg"
             role="application"
-            aria-label="Interactive TalentGraph visualization. Drag the background to pan, scroll to zoom, or select a node."
+            aria-label="Interactive TalentGraph visualization. Drag nodes to reposition them, drag the background to pan, or scroll to zoom."
             tabIndex={0}
             width="100%"
             height="100%"
@@ -468,6 +568,23 @@ export const GraphCanvas = forwardRef<GraphCanvasHandle, GraphCanvasProps>(
               fill="url(#graph-grid)"
             />
             <g
+              aria-hidden="true"
+              pointerEvents="none"
+              transform="translate(18 18)"
+            >
+              <rect
+                width="238"
+                height="34"
+                rx="10"
+                fill="#ffffff"
+                stroke="#cbd5e1"
+                opacity="0.94"
+              />
+              <text x="14" y="22" fontSize="12" fontWeight="600" fill="#475569">
+                Drag a node to untangle this view
+              </text>
+            </g>
+            <g
               data-testid="graph-viewport"
               transform={`translate(${viewport.x} ${viewport.y}) scale(${viewport.zoom})`}
             >
@@ -480,50 +597,45 @@ export const GraphCanvas = forwardRef<GraphCanvasHandle, GraphCanvasProps>(
                   }
                   const touchesSelection =
                     edge.source === selectedNodeId || edge.target === selectedNodeId;
+                  const touchesHover =
+                    edge.source === hoveredNodeId || edge.target === hoveredNodeId;
+                  const emphasized = touchesSelection || touchesHover;
                   const color = RELATIONSHIP_COLORS[edge.type];
+                  const line = shortenEdge(source, target);
 
                   return (
-                    <g key={edge.id} data-testid="graph-edge">
+                    <g
+                      key={edge.id}
+                      data-testid="graph-edge"
+                      data-edge-id={edge.id}
+                    >
+                      <title>{`${edge.label}: ${edge.source} → ${edge.target}`}</title>
                       <line
-                        x1={source.x}
-                        y1={source.y}
-                        x2={target.x}
-                        y2={target.y}
+                        x1={line.x1}
+                        y1={line.y1}
+                        x2={line.x2}
+                        y2={line.y2}
                         stroke={color}
-                        strokeWidth={touchesSelection ? 3 : 1.7}
+                        strokeWidth={emphasized ? 2.8 : 1.25}
                         strokeDasharray={
                           edge.type === "RELATED_TO" ? "7 6" : undefined
                         }
                         opacity={
-                          selectedNodeId ? (touchesSelection ? 0.9 : 0.28) : 0.58
+                          selectedNodeId || hoveredNodeId
+                            ? emphasized
+                              ? 0.82
+                              : 0.1
+                            : 0.4
                         }
                         markerEnd={`url(#arrow-${edge.type})`}
                         vectorEffect="non-scaling-stroke"
                       />
-                      {touchesSelection ? (
-                        <text
-                          x={(source.x + target.x) / 2}
-                          y={(source.y + target.y) / 2 - 5}
-                          textAnchor="middle"
-                          fontSize="9"
-                          fontWeight="600"
-                          fill="#475569"
-                          stroke="#f8fafc"
-                          strokeWidth="4"
-                          paintOrder="stroke"
-                        >
-                          {edge.label}
-                        </text>
-                      ) : null}
                     </g>
                   );
                 })}
               </g>
 
-              {graph.nodes.map((node) => {
-                if (!visibleNodeIds.has(node.id)) {
-                  return null;
-                }
+              {visibleNodes.map((node) => {
                 const position = positions[node.id];
                 if (!position) {
                   return null;
@@ -531,6 +643,21 @@ export const GraphCanvas = forwardRef<GraphCanvasHandle, GraphCanvasProps>(
                 const selected = node.id === selectedNodeId;
                 const connected = connectedNodeIds.has(node.id);
                 const root = node.id === graph.rootId;
+                const hovered = node.id === hoveredNodeId;
+                const displayLabel =
+                  node.label.length > 28
+                    ? `${node.label.slice(0, 27)}…`
+                    : node.label;
+                const showLabel =
+                  selected ||
+                  root ||
+                  hovered ||
+                  (node.type === "role" && connected) ||
+                  viewport.zoom >= 1.5;
+                const labelWidth = Math.min(
+                  200,
+                  Math.max(62, displayLabel.length * 6.4 + 18),
+                );
 
                 return (
                   <g
@@ -540,13 +667,20 @@ export const GraphCanvas = forwardRef<GraphCanvasHandle, GraphCanvasProps>(
                     data-x={position.x}
                     data-y={position.y}
                     role="button"
-                    aria-label={`${node.label}, ${node.type}`}
+                    aria-label={`${node.label}, ${node.type}. Drag to reposition.`}
                     tabIndex={0}
                     transform={`translate(${position.x} ${position.y})`}
-                    className="cursor-pointer outline-none"
+                    className="cursor-grab outline-none active:cursor-grabbing"
                     opacity={
-                      selectedNodeId && !selected && !connected ? 0.68 : 1
+                      selectedNodeId && !selected && !connected && !hovered
+                        ? 0.42
+                        : 1
                     }
+                    onPointerDown={(event) =>
+                      handleNodePointerDown(event, node.id)
+                    }
+                    onPointerEnter={() => setHoveredNodeId(node.id)}
+                    onPointerLeave={() => setHoveredNodeId(null)}
                     onClick={() => onSelectNode(node.id)}
                     onKeyDown={(event) =>
                       handleNodeKeyDown(event, node.id, onSelectNode)
@@ -563,20 +697,31 @@ export const GraphCanvas = forwardRef<GraphCanvasHandle, GraphCanvasProps>(
                       />
                     ) : null}
                     <NodeShape node={node} />
-                    <text
-                      y={46}
-                      textAnchor="middle"
-                      fontSize={root ? 13 : 11}
-                      fontWeight={root || selected ? "700" : "600"}
-                      fill="#334155"
-                      stroke="#f8fafc"
-                      strokeWidth="5"
-                      paintOrder="stroke"
-                    >
-                      {node.label.length > 28
-                        ? `${node.label.slice(0, 27)}…`
-                        : node.label}
-                    </text>
+                    {showLabel ? (
+                      <g pointerEvents="none">
+                        <rect
+                          x={-labelWidth / 2}
+                          y={34}
+                          width={labelWidth}
+                          height={24}
+                          rx={8}
+                          fill={selected ? "#0f172a" : "#ffffff"}
+                          stroke={selected ? "#22d3ee" : "#cbd5e1"}
+                          strokeWidth={selected ? 2 : 1}
+                          opacity={0.96}
+                          vectorEffect="non-scaling-stroke"
+                        />
+                        <text
+                          y={50}
+                          textAnchor="middle"
+                          fontSize={root ? 12 : 10.5}
+                          fontWeight={root || selected ? "700" : "600"}
+                          fill={selected ? "#ffffff" : "#334155"}
+                        >
+                          {displayLabel}
+                        </text>
+                      </g>
+                    ) : null}
                   </g>
                 );
               })}

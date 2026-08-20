@@ -266,7 +266,8 @@ export function GraphExplorer() {
                         <Badge variant="outline">{graph.depth} hops</Badge>
                       </div>
                       <p className="mt-1 text-xs text-slate-500">
-                        Drag to pan, scroll to zoom, and click any node to inspect it.
+                        Drag nodes to reposition them, drag empty space to pan,
+                        and click any node to inspect it.
                       </p>
                     </div>
                     <div className="flex items-center gap-1" aria-label="Graph view controls">

@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 
 import type { CareerPathRepository } from "../src/repositories/career-path-repository";
+import type { LearningRepository } from "../src/repositories/learning-repository";
 import type { RoleRepository } from "../src/repositories/role-repository";
 import {
   buildCareerPathResult,
@@ -148,11 +149,14 @@ describe("career path normalization", () => {
     };
     const careerPathRepository: CareerPathRepository = {
       findCandidates: async () => [longCandidate, shortCandidate],
-      findLearningOptions: async () => [...learningOptions.values()],
+    };
+    const learningRepository: LearningRepository = {
+      findOptionsForSkills: async () => [...learningOptions.values()],
     };
     const service = new CareerPathService(
       roleRepository,
       careerPathRepository,
+      learningRepository,
     );
 
     const results = await service.findPaths({
