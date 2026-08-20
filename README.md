@@ -31,9 +31,10 @@ The repository currently includes:
 - A responsive `/career-path` explorer with role, skill, and path controls.
 - Ranked transition cards with skill-fit scores and expandable learning plans.
 - Loading, empty, API error, and retry states for the primary demo flow.
+- A responsive `/skill-gap` analyzer with weighted readiness and ranked next skills.
 - Automated tests for data invariants and primary demo path coverage.
 
-The skill-gap and graph-explorer user interfaces are the next implementation milestones.
+The graph explorer and final landing-page experience are the next implementation milestones.
 
 ## API
 
@@ -44,6 +45,7 @@ GET  /api/health
 GET  /api/roles?q=<query>
 GET  /api/roles/:id
 POST /api/career-path
+POST /api/skill-gap
 ```
 
 Example career-path request:
@@ -70,6 +72,20 @@ LIMIT 25
 ```
 
 The service removes cyclic and duplicate candidates, calculates shared and missing skills at each transition, attaches learning resources and projects, and returns at most five paths ordered by hop count and suitability.
+
+Example skill-gap request:
+
+```json
+{
+  "targetRoleId": "ai-engineer",
+  "skillIds": ["python", "rest-apis"]
+}
+```
+
+The skill-gap service compares the selected skills with the target role's
+requirements, calculates an importance-weighted readiness score, separates
+essential and optional gaps, and returns up to five next skills with mapped
+learning resources and projects.
 
 ## Dataset
 
