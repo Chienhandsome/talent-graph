@@ -37,3 +37,14 @@ export const skillGapRequestSchema = z
     ...value,
     skillIds: [...new Set(value.skillIds)],
   }));
+
+export const graphQuerySchema = z
+  .object({
+    roleId: stableIdSchema,
+    depth: z.coerce.number().int().min(1).max(2).default(1),
+  })
+  .strict()
+  .transform((value) => ({
+    roleId: value.roleId,
+    depth: value.depth as 1 | 2,
+  }));
