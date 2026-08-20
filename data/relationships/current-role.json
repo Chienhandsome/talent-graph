@@ -1,0 +1,22 @@
+[
+  {
+    "profileId": "frontend-learner",
+    "roleId": "frontend-developer"
+  },
+  {
+    "profileId": "backend-learner",
+    "roleId": "backend-developer"
+  },
+  {
+    "profileId": "analytics-learner",
+    "roleId": "data-analyst"
+  },
+  {
+    "profileId": "ml-learner",
+    "roleId": "data-scientist"
+  },
+  {
+    "profileId": "operations-learner",
+    "roleId": "devops-engineer"
+  }
+]

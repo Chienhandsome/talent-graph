@@ -1,0 +1,142 @@
+[
+  {
+    "id": "accessible-portfolio",
+    "title": "Accessible Developer Portfolio",
+    "difficulty": "beginner",
+    "description": "Build a responsive portfolio with semantic navigation, keyboard support, and tested components.",
+    "source": "Synthetic portfolio project curated for TalentGraph"
+  },
+  {
+    "id": "full-stack-task-tracker",
+    "title": "Full Stack Task Tracker",
+    "difficulty": "intermediate",
+    "description": "Build a typed task product with server rendering, API routes, and relational persistence.",
+    "source": "Synthetic portfolio project curated for TalentGraph"
+  },
+  {
+    "id": "mobile-habit-coach",
+    "title": "Mobile Habit Coach",
+    "difficulty": "intermediate",
+    "description": "Create a cross-platform habit application with offline-friendly flows and widget tests.",
+    "source": "Synthetic portfolio project curated for TalentGraph"
+  },
+  {
+    "id": "python-api-service",
+    "title": "Validated Python API Service",
+    "difficulty": "intermediate",
+    "description": "Implement a documented service with validation, database access, and integration tests.",
+    "source": "Synthetic portfolio project curated for TalentGraph"
+  },
+  {
+    "id": "cloud-deployment-pipeline",
+    "title": "Cloud Deployment Pipeline",
+    "difficulty": "advanced",
+    "description": "Containerize an application and automate tested deployment to a managed Kubernetes environment.",
+    "source": "Synthetic portfolio project curated for TalentGraph"
+  },
+  {
+    "id": "service-observability-lab",
+    "title": "Service Observability Lab",
+    "difficulty": "advanced",
+    "description": "Instrument a service with structured signals, dashboards, alerts, and repeatable infrastructure.",
+    "source": "Synthetic portfolio project curated for TalentGraph"
+  },
+  {
+    "id": "security-scanner",
+    "title": "Dependency Security Scanner",
+    "difficulty": "intermediate",
+    "description": "Create a command-line tool that detects risky dependencies and verifies remediation rules.",
+    "source": "Synthetic portfolio project curated for TalentGraph"
+  },
+  {
+    "id": "career-knowledge-graph",
+    "title": "Career Knowledge Graph",
+    "difficulty": "advanced",
+    "description": "Model career connections and expose bounded, parameterized multi-hop graph queries through an API.",
+    "source": "Synthetic portfolio project curated for TalentGraph"
+  },
+  {
+    "id": "analytics-warehouse",
+    "title": "Analytics Warehouse",
+    "difficulty": "advanced",
+    "description": "Load raw events into a warehouse and publish documented, tested analytical models.",
+    "source": "Synthetic portfolio project curated for TalentGraph"
+  },
+  {
+    "id": "churn-prediction",
+    "title": "Churn Prediction Study",
+    "difficulty": "intermediate",
+    "description": "Train a reproducible churn model and communicate feature choices and evaluation limitations.",
+    "source": "Synthetic portfolio project curated for TalentGraph"
+  },
+  {
+    "id": "image-classifier",
+    "title": "Image Classification Service",
+    "difficulty": "advanced",
+    "description": "Train, evaluate, package, and serve an image classifier with documented failure cases.",
+    "source": "Synthetic portfolio project curated for TalentGraph"
+  },
+  {
+    "id": "retrieval-assistant",
+    "title": "Retrieval-Augmented Assistant",
+    "difficulty": "advanced",
+    "description": "Build a grounded language assistant with prompt experiments and a repeatable evaluation set.",
+    "source": "Synthetic portfolio project curated for TalentGraph"
+  },
+  {
+    "id": "mlops-training-pipeline",
+    "title": "Automated ML Training Pipeline",
+    "difficulty": "advanced",
+    "description": "Automate model training, validation, artifact promotion, deployment, and production monitoring.",
+    "source": "Synthetic portfolio project curated for TalentGraph"
+  },
+  {
+    "id": "streaming-data-pipeline",
+    "title": "Streaming Data Pipeline",
+    "difficulty": "advanced",
+    "description": "Process event streams into partitioned analytical data with quality and recovery checks.",
+    "source": "Synthetic portfolio project curated for TalentGraph"
+  },
+  {
+    "id": "cross-platform-commerce-app",
+    "title": "Cross-Platform Commerce App",
+    "difficulty": "advanced",
+    "description": "Build a polished mobile storefront with typed API integration and accessible interactions.",
+    "source": "Synthetic portfolio project curated for TalentGraph"
+  },
+  {
+    "id": "native-ios-journal",
+    "title": "Native iOS Journal",
+    "difficulty": "intermediate",
+    "description": "Create a native journal app with accessible controls, local state, and automated tests.",
+    "source": "Synthetic portfolio project curated for TalentGraph"
+  },
+  {
+    "id": "android-transit-client",
+    "title": "Android Transit Client",
+    "difficulty": "intermediate",
+    "description": "Build a native transit client with resilient networking and testable application boundaries.",
+    "source": "Synthetic portfolio project curated for TalentGraph"
+  },
+  {
+    "id": "go-microservice-system",
+    "title": "Go Microservice System",
+    "difficulty": "advanced",
+    "description": "Design two small services with explicit contracts, tracing, and containerized local operation.",
+    "source": "Synthetic portfolio project curated for TalentGraph"
+  },
+  {
+    "id": "dotnet-inventory-api",
+    "title": ".NET Inventory API",
+    "difficulty": "intermediate",
+    "description": "Implement a secure inventory API with relational persistence and contract-level testing.",
+    "source": "Synthetic portfolio project curated for TalentGraph"
+  },
+  {
+    "id": "team-delivery-simulation",
+    "title": "Team Delivery Simulation",
+    "difficulty": "beginner",
+    "description": "Plan and retrospect a small delivery cycle with clear decisions, risks, and version history.",
+    "source": "Synthetic portfolio project curated for TalentGraph"
+  }
+]

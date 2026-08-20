@@ -1,0 +1,322 @@
+[
+  {
+    "projectId": "accessible-portfolio",
+    "skillId": "html"
+  },
+  {
+    "projectId": "accessible-portfolio",
+    "skillId": "css"
+  },
+  {
+    "projectId": "accessible-portfolio",
+    "skillId": "react"
+  },
+  {
+    "projectId": "accessible-portfolio",
+    "skillId": "accessibility"
+  },
+  {
+    "projectId": "full-stack-task-tracker",
+    "skillId": "typescript"
+  },
+  {
+    "projectId": "full-stack-task-tracker",
+    "skillId": "next-js"
+  },
+  {
+    "projectId": "full-stack-task-tracker",
+    "skillId": "node-js"
+  },
+  {
+    "projectId": "full-stack-task-tracker",
+    "skillId": "postgresql"
+  },
+  {
+    "projectId": "mobile-habit-coach",
+    "skillId": "dart"
+  },
+  {
+    "projectId": "mobile-habit-coach",
+    "skillId": "flutter"
+  },
+  {
+    "projectId": "mobile-habit-coach",
+    "skillId": "ui-ux"
+  },
+  {
+    "projectId": "mobile-habit-coach",
+    "skillId": "testing"
+  },
+  {
+    "projectId": "python-api-service",
+    "skillId": "python"
+  },
+  {
+    "projectId": "python-api-service",
+    "skillId": "fastapi"
+  },
+  {
+    "projectId": "python-api-service",
+    "skillId": "rest-apis"
+  },
+  {
+    "projectId": "python-api-service",
+    "skillId": "postgresql"
+  },
+  {
+    "projectId": "cloud-deployment-pipeline",
+    "skillId": "docker"
+  },
+  {
+    "projectId": "cloud-deployment-pipeline",
+    "skillId": "kubernetes"
+  },
+  {
+    "projectId": "cloud-deployment-pipeline",
+    "skillId": "ci-cd"
+  },
+  {
+    "projectId": "cloud-deployment-pipeline",
+    "skillId": "aws"
+  },
+  {
+    "projectId": "service-observability-lab",
+    "skillId": "observability"
+  },
+  {
+    "projectId": "service-observability-lab",
+    "skillId": "linux"
+  },
+  {
+    "projectId": "service-observability-lab",
+    "skillId": "python"
+  },
+  {
+    "projectId": "service-observability-lab",
+    "skillId": "terraform"
+  },
+  {
+    "projectId": "security-scanner",
+    "skillId": "security"
+  },
+  {
+    "projectId": "security-scanner",
+    "skillId": "python"
+  },
+  {
+    "projectId": "security-scanner",
+    "skillId": "bash"
+  },
+  {
+    "projectId": "security-scanner",
+    "skillId": "testing"
+  },
+  {
+    "projectId": "career-knowledge-graph",
+    "skillId": "graph-databases"
+  },
+  {
+    "projectId": "career-knowledge-graph",
+    "skillId": "cypher"
+  },
+  {
+    "projectId": "career-knowledge-graph",
+    "skillId": "typescript"
+  },
+  {
+    "projectId": "career-knowledge-graph",
+    "skillId": "rest-apis"
+  },
+  {
+    "projectId": "analytics-warehouse",
+    "skillId": "sql"
+  },
+  {
+    "projectId": "analytics-warehouse",
+    "skillId": "etl"
+  },
+  {
+    "projectId": "analytics-warehouse",
+    "skillId": "data-warehousing"
+  },
+  {
+    "projectId": "analytics-warehouse",
+    "skillId": "data-modeling"
+  },
+  {
+    "projectId": "churn-prediction",
+    "skillId": "python"
+  },
+  {
+    "projectId": "churn-prediction",
+    "skillId": "machine-learning"
+  },
+  {
+    "projectId": "churn-prediction",
+    "skillId": "feature-engineering"
+  },
+  {
+    "projectId": "churn-prediction",
+    "skillId": "model-evaluation"
+  },
+  {
+    "projectId": "image-classifier",
+    "skillId": "python"
+  },
+  {
+    "projectId": "image-classifier",
+    "skillId": "deep-learning"
+  },
+  {
+    "projectId": "image-classifier",
+    "skillId": "computer-vision"
+  },
+  {
+    "projectId": "image-classifier",
+    "skillId": "model-evaluation"
+  },
+  {
+    "projectId": "retrieval-assistant",
+    "skillId": "python"
+  },
+  {
+    "projectId": "retrieval-assistant",
+    "skillId": "large-language-models"
+  },
+  {
+    "projectId": "retrieval-assistant",
+    "skillId": "natural-language-processing"
+  },
+  {
+    "projectId": "retrieval-assistant",
+    "skillId": "prompt-engineering"
+  },
+  {
+    "projectId": "mlops-training-pipeline",
+    "skillId": "mlops"
+  },
+  {
+    "projectId": "mlops-training-pipeline",
+    "skillId": "docker"
+  },
+  {
+    "projectId": "mlops-training-pipeline",
+    "skillId": "ci-cd"
+  },
+  {
+    "projectId": "mlops-training-pipeline",
+    "skillId": "observability"
+  },
+  {
+    "projectId": "streaming-data-pipeline",
+    "skillId": "spark"
+  },
+  {
+    "projectId": "streaming-data-pipeline",
+    "skillId": "etl"
+  },
+  {
+    "projectId": "streaming-data-pipeline",
+    "skillId": "python"
+  },
+  {
+    "projectId": "streaming-data-pipeline",
+    "skillId": "aws"
+  },
+  {
+    "projectId": "cross-platform-commerce-app",
+    "skillId": "react-native"
+  },
+  {
+    "projectId": "cross-platform-commerce-app",
+    "skillId": "javascript"
+  },
+  {
+    "projectId": "cross-platform-commerce-app",
+    "skillId": "ui-ux"
+  },
+  {
+    "projectId": "cross-platform-commerce-app",
+    "skillId": "rest-apis"
+  },
+  {
+    "projectId": "native-ios-journal",
+    "skillId": "swift"
+  },
+  {
+    "projectId": "native-ios-journal",
+    "skillId": "ui-ux"
+  },
+  {
+    "projectId": "native-ios-journal",
+    "skillId": "accessibility"
+  },
+  {
+    "projectId": "native-ios-journal",
+    "skillId": "testing"
+  },
+  {
+    "projectId": "android-transit-client",
+    "skillId": "kotlin"
+  },
+  {
+    "projectId": "android-transit-client",
+    "skillId": "java"
+  },
+  {
+    "projectId": "android-transit-client",
+    "skillId": "testing"
+  },
+  {
+    "projectId": "android-transit-client",
+    "skillId": "rest-apis"
+  },
+  {
+    "projectId": "go-microservice-system",
+    "skillId": "go"
+  },
+  {
+    "projectId": "go-microservice-system",
+    "skillId": "microservices"
+  },
+  {
+    "projectId": "go-microservice-system",
+    "skillId": "system-design"
+  },
+  {
+    "projectId": "go-microservice-system",
+    "skillId": "docker"
+  },
+  {
+    "projectId": "dotnet-inventory-api",
+    "skillId": "c-sharp"
+  },
+  {
+    "projectId": "dotnet-inventory-api",
+    "skillId": "dotnet"
+  },
+  {
+    "projectId": "dotnet-inventory-api",
+    "skillId": "rest-apis"
+  },
+  {
+    "projectId": "dotnet-inventory-api",
+    "skillId": "sql"
+  },
+  {
+    "projectId": "team-delivery-simulation",
+    "skillId": "agile"
+  },
+  {
+    "projectId": "team-delivery-simulation",
+    "skillId": "communication"
+  },
+  {
+    "projectId": "team-delivery-simulation",
+    "skillId": "problem-solving"
+  },
+  {
+    "projectId": "team-delivery-simulation",
+    "skillId": "git"
+  }
+]

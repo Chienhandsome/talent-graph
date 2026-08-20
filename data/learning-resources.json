@@ -1,0 +1,227 @@
+[
+  {
+    "id": "mdn-web-learning",
+    "title": "MDN Learn Web Development",
+    "type": "documentation",
+    "provider": "Mozilla",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development",
+    "description": "Structured official guidance for modern browser fundamentals and accessible web development.",
+    "source": "Official provider documentation or learning material"
+  },
+  {
+    "id": "typescript-handbook",
+    "title": "TypeScript Handbook",
+    "type": "documentation",
+    "provider": "Microsoft",
+    "url": "https://www.typescriptlang.org/docs/handbook/intro.html",
+    "description": "Official language guide covering TypeScript types, narrowing, functions, and object modeling.",
+    "source": "Official provider documentation or learning material"
+  },
+  {
+    "id": "react-learn",
+    "title": "React Learn",
+    "type": "documentation",
+    "provider": "React",
+    "url": "https://react.dev/learn",
+    "description": "Official interactive introduction to components, state, effects, and application composition.",
+    "source": "Official provider documentation or learning material"
+  },
+  {
+    "id": "nextjs-documentation",
+    "title": "Next.js Documentation",
+    "type": "documentation",
+    "provider": "Vercel",
+    "url": "https://nextjs.org/docs",
+    "description": "Official documentation for building full-stack React applications with the App Router.",
+    "source": "Official provider documentation or learning material"
+  },
+  {
+    "id": "nodejs-learn",
+    "title": "Node.js Learn",
+    "type": "documentation",
+    "provider": "OpenJS Foundation",
+    "url": "https://nodejs.org/en/learn",
+    "description": "Official learning materials for server-side JavaScript, asynchronous code, and HTTP services.",
+    "source": "Official provider documentation or learning material"
+  },
+  {
+    "id": "python-tutorial",
+    "title": "The Python Tutorial",
+    "type": "tutorial",
+    "provider": "Python Software Foundation",
+    "url": "https://docs.python.org/3/tutorial/",
+    "description": "Official tutorial covering Python syntax, data structures, modules, and standard tooling.",
+    "source": "Official provider documentation or learning material"
+  },
+  {
+    "id": "devjava-learning",
+    "title": "Learn Java",
+    "type": "documentation",
+    "provider": "Oracle",
+    "url": "https://dev.java/learn/",
+    "description": "Official Java learning path for language fundamentals and production application development.",
+    "source": "Official provider documentation or learning material"
+  },
+  {
+    "id": "csharp-documentation",
+    "title": "C# Documentation",
+    "type": "documentation",
+    "provider": "Microsoft",
+    "url": "https://learn.microsoft.com/en-us/dotnet/csharp/",
+    "description": "Official C# language documentation and guided learning for the .NET platform.",
+    "source": "Official provider documentation or learning material"
+  },
+  {
+    "id": "tour-of-go",
+    "title": "A Tour of Go",
+    "type": "tutorial",
+    "provider": "The Go Authors",
+    "url": "https://go.dev/tour/",
+    "description": "Official interactive tour of Go syntax, methods, interfaces, generics, and concurrency.",
+    "source": "Official provider documentation or learning material"
+  },
+  {
+    "id": "rust-book",
+    "title": "The Rust Programming Language",
+    "type": "book",
+    "provider": "The Rust Project",
+    "url": "https://doc.rust-lang.org/book/",
+    "description": "Official book for Rust ownership, type safety, concurrency, and systems programming.",
+    "source": "Official provider documentation or learning material"
+  },
+  {
+    "id": "flutter-get-started",
+    "title": "Get Started with Flutter",
+    "type": "documentation",
+    "provider": "Google",
+    "url": "https://docs.flutter.dev/get-started",
+    "description": "Official path for creating cross-platform applications with Dart and Flutter widgets.",
+    "source": "Official provider documentation or learning material"
+  },
+  {
+    "id": "android-courses",
+    "title": "Android Developer Courses",
+    "type": "course",
+    "provider": "Google",
+    "url": "https://developer.android.com/courses",
+    "description": "Official Android courses covering Kotlin, app architecture, and modern interface development.",
+    "source": "Official provider documentation or learning material"
+  },
+  {
+    "id": "swift-book",
+    "title": "The Swift Programming Language",
+    "type": "book",
+    "provider": "Apple",
+    "url": "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/",
+    "description": "Official guide to Swift language features used across Apple application platforms.",
+    "source": "Official provider documentation or learning material"
+  },
+  {
+    "id": "postgresql-tutorial",
+    "title": "PostgreSQL Tutorial",
+    "type": "tutorial",
+    "provider": "PostgreSQL Global Development Group",
+    "url": "https://www.postgresql.org/docs/current/tutorial.html",
+    "description": "Official tutorial for relational concepts, SQL queries, joins, aggregates, and transactions.",
+    "source": "Official provider documentation or learning material"
+  },
+  {
+    "id": "mongodb-university",
+    "title": "MongoDB University",
+    "type": "course",
+    "provider": "MongoDB",
+    "url": "https://learn.mongodb.com/",
+    "description": "Official courses for document modeling, querying, aggregation, and operational practices.",
+    "source": "Official provider documentation or learning material"
+  },
+  {
+    "id": "cognodb-developer-guide",
+    "title": "CognoDB Developer Guide",
+    "type": "documentation",
+    "provider": "Wexa AI",
+    "url": "https://cognodb.com/docs",
+    "description": "Official guide for graph modeling, Cypher traversal, parameters, constraints, and Bolt clients.",
+    "source": "Official provider documentation or learning material"
+  },
+  {
+    "id": "pro-git",
+    "title": "Pro Git",
+    "type": "book",
+    "provider": "Git SCM",
+    "url": "https://git-scm.com/book/en/v2",
+    "description": "Official open book covering distributed version control workflows and collaboration practices.",
+    "source": "Official provider documentation or learning material"
+  },
+  {
+    "id": "docker-get-started",
+    "title": "Docker Get Started",
+    "type": "documentation",
+    "provider": "Docker",
+    "url": "https://docs.docker.com/get-started/",
+    "description": "Official introduction to images, containers, multi-container applications, and delivery workflows.",
+    "source": "Official provider documentation or learning material"
+  },
+  {
+    "id": "kubernetes-basics",
+    "title": "Learn Kubernetes Basics",
+    "type": "tutorial",
+    "provider": "Cloud Native Computing Foundation",
+    "url": "https://kubernetes.io/docs/tutorials/kubernetes-basics/",
+    "description": "Official interactive tutorial for deploying, scaling, updating, and debugging containerized applications.",
+    "source": "Official provider documentation or learning material"
+  },
+  {
+    "id": "terraform-tutorials",
+    "title": "Terraform Tutorials",
+    "type": "tutorial",
+    "provider": "HashiCorp",
+    "url": "https://developer.hashicorp.com/terraform/tutorials",
+    "description": "Official infrastructure-as-code tutorials across major public cloud providers and workflows.",
+    "source": "Official provider documentation or learning material"
+  },
+  {
+    "id": "aws-skill-builder",
+    "title": "AWS Skill Builder",
+    "type": "course",
+    "provider": "Amazon Web Services",
+    "url": "https://explore.skillbuilder.aws/",
+    "description": "Official digital courses for cloud architecture, operations, and security on AWS.",
+    "source": "Official provider documentation or learning material"
+  },
+  {
+    "id": "google-ml-crash-course",
+    "title": "Machine Learning Crash Course",
+    "type": "course",
+    "provider": "Google",
+    "url": "https://developers.google.com/machine-learning/crash-course",
+    "description": "Official practical introduction to machine-learning concepts, data preparation, and evaluation.",
+    "source": "Official provider documentation or learning material"
+  },
+  {
+    "id": "pytorch-tutorials",
+    "title": "PyTorch Tutorials",
+    "type": "tutorial",
+    "provider": "PyTorch Foundation",
+    "url": "https://pytorch.org/tutorials/",
+    "description": "Official examples for tensors, neural networks, training loops, vision, and language models.",
+    "source": "Official provider documentation or learning material"
+  },
+  {
+    "id": "huggingface-llm-course",
+    "title": "Hugging Face LLM Course",
+    "type": "course",
+    "provider": "Hugging Face",
+    "url": "https://huggingface.co/learn/llm-course/chapter1/1",
+    "description": "Official course for transformer models, natural-language tasks, and responsible model use.",
+    "source": "Official provider documentation or learning material"
+  },
+  {
+    "id": "google-cloud-mlops",
+    "title": "MLOps: Continuous Delivery and Automation Pipelines",
+    "type": "documentation",
+    "provider": "Google Cloud",
+    "url": "https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning",
+    "description": "Official architecture guidance for automated, testable, and observable machine-learning delivery.",
+    "source": "Official provider documentation or learning material"
+  }
+]

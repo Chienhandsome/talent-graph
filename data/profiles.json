@@ -1,0 +1,32 @@
+[
+  {
+    "id": "frontend-learner",
+    "name": "Frontend Learner (Synthetic)",
+    "summary": "A synthetic learner preparing to move from frontend delivery toward applied AI engineering.",
+    "synthetic": true
+  },
+  {
+    "id": "backend-learner",
+    "name": "Backend Learner (Synthetic)",
+    "summary": "A synthetic backend developer exploring graph systems and data engineering responsibilities.",
+    "synthetic": true
+  },
+  {
+    "id": "analytics-learner",
+    "name": "Analytics Learner (Synthetic)",
+    "summary": "A synthetic analyst developing the engineering foundation needed for reliable data products.",
+    "synthetic": true
+  },
+  {
+    "id": "ml-learner",
+    "name": "ML Learner (Synthetic)",
+    "summary": "A synthetic data scientist preparing to productionize and monitor machine-learning systems.",
+    "synthetic": true
+  },
+  {
+    "id": "operations-learner",
+    "name": "Operations Learner (Synthetic)",
+    "summary": "A synthetic DevOps engineer building deeper platform reliability and infrastructure design skills.",
+    "synthetic": true
+  }
+]

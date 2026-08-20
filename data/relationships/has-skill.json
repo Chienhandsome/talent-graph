@@ -1,0 +1,252 @@
+[
+  {
+    "profileId": "frontend-learner",
+    "skillId": "javascript",
+    "level": "advanced"
+  },
+  {
+    "profileId": "frontend-learner",
+    "skillId": "typescript",
+    "level": "intermediate"
+  },
+  {
+    "profileId": "frontend-learner",
+    "skillId": "react",
+    "level": "advanced"
+  },
+  {
+    "profileId": "frontend-learner",
+    "skillId": "html",
+    "level": "advanced"
+  },
+  {
+    "profileId": "frontend-learner",
+    "skillId": "css",
+    "level": "advanced"
+  },
+  {
+    "profileId": "frontend-learner",
+    "skillId": "git",
+    "level": "intermediate"
+  },
+  {
+    "profileId": "frontend-learner",
+    "skillId": "testing",
+    "level": "intermediate"
+  },
+  {
+    "profileId": "frontend-learner",
+    "skillId": "accessibility",
+    "level": "intermediate"
+  },
+  {
+    "profileId": "frontend-learner",
+    "skillId": "tailwind-css",
+    "level": "intermediate"
+  },
+  {
+    "profileId": "frontend-learner",
+    "skillId": "next-js",
+    "level": "beginner"
+  },
+  {
+    "profileId": "backend-learner",
+    "skillId": "typescript",
+    "level": "advanced"
+  },
+  {
+    "profileId": "backend-learner",
+    "skillId": "node-js",
+    "level": "advanced"
+  },
+  {
+    "profileId": "backend-learner",
+    "skillId": "express-js",
+    "level": "intermediate"
+  },
+  {
+    "profileId": "backend-learner",
+    "skillId": "rest-apis",
+    "level": "advanced"
+  },
+  {
+    "profileId": "backend-learner",
+    "skillId": "sql",
+    "level": "intermediate"
+  },
+  {
+    "profileId": "backend-learner",
+    "skillId": "postgresql",
+    "level": "intermediate"
+  },
+  {
+    "profileId": "backend-learner",
+    "skillId": "git",
+    "level": "advanced"
+  },
+  {
+    "profileId": "backend-learner",
+    "skillId": "testing",
+    "level": "intermediate"
+  },
+  {
+    "profileId": "backend-learner",
+    "skillId": "docker",
+    "level": "beginner"
+  },
+  {
+    "profileId": "backend-learner",
+    "skillId": "data-modeling",
+    "level": "intermediate"
+  },
+  {
+    "profileId": "analytics-learner",
+    "skillId": "sql",
+    "level": "advanced"
+  },
+  {
+    "profileId": "analytics-learner",
+    "skillId": "statistics",
+    "level": "intermediate"
+  },
+  {
+    "profileId": "analytics-learner",
+    "skillId": "python",
+    "level": "intermediate"
+  },
+  {
+    "profileId": "analytics-learner",
+    "skillId": "pandas",
+    "level": "advanced"
+  },
+  {
+    "profileId": "analytics-learner",
+    "skillId": "data-modeling",
+    "level": "intermediate"
+  },
+  {
+    "profileId": "analytics-learner",
+    "skillId": "communication",
+    "level": "advanced"
+  },
+  {
+    "profileId": "analytics-learner",
+    "skillId": "problem-solving",
+    "level": "advanced"
+  },
+  {
+    "profileId": "analytics-learner",
+    "skillId": "etl",
+    "level": "beginner"
+  },
+  {
+    "profileId": "analytics-learner",
+    "skillId": "r",
+    "level": "intermediate"
+  },
+  {
+    "profileId": "analytics-learner",
+    "skillId": "git",
+    "level": "beginner"
+  },
+  {
+    "profileId": "ml-learner",
+    "skillId": "python",
+    "level": "advanced"
+  },
+  {
+    "profileId": "ml-learner",
+    "skillId": "statistics",
+    "level": "advanced"
+  },
+  {
+    "profileId": "ml-learner",
+    "skillId": "machine-learning",
+    "level": "advanced"
+  },
+  {
+    "profileId": "ml-learner",
+    "skillId": "pandas",
+    "level": "advanced"
+  },
+  {
+    "profileId": "ml-learner",
+    "skillId": "sql",
+    "level": "intermediate"
+  },
+  {
+    "profileId": "ml-learner",
+    "skillId": "feature-engineering",
+    "level": "intermediate"
+  },
+  {
+    "profileId": "ml-learner",
+    "skillId": "model-evaluation",
+    "level": "intermediate"
+  },
+  {
+    "profileId": "ml-learner",
+    "skillId": "docker",
+    "level": "beginner"
+  },
+  {
+    "profileId": "ml-learner",
+    "skillId": "git",
+    "level": "intermediate"
+  },
+  {
+    "profileId": "ml-learner",
+    "skillId": "communication",
+    "level": "advanced"
+  },
+  {
+    "profileId": "operations-learner",
+    "skillId": "linux",
+    "level": "advanced"
+  },
+  {
+    "profileId": "operations-learner",
+    "skillId": "git",
+    "level": "advanced"
+  },
+  {
+    "profileId": "operations-learner",
+    "skillId": "docker",
+    "level": "advanced"
+  },
+  {
+    "profileId": "operations-learner",
+    "skillId": "kubernetes",
+    "level": "intermediate"
+  },
+  {
+    "profileId": "operations-learner",
+    "skillId": "ci-cd",
+    "level": "advanced"
+  },
+  {
+    "profileId": "operations-learner",
+    "skillId": "aws",
+    "level": "intermediate"
+  },
+  {
+    "profileId": "operations-learner",
+    "skillId": "terraform",
+    "level": "intermediate"
+  },
+  {
+    "profileId": "operations-learner",
+    "skillId": "observability",
+    "level": "intermediate"
+  },
+  {
+    "profileId": "operations-learner",
+    "skillId": "bash",
+    "level": "advanced"
+  },
+  {
+    "profileId": "operations-learner",
+    "skillId": "security",
+    "level": "intermediate"
+  }
+]

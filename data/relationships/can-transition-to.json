@@ -1,0 +1,362 @@
+[
+  {
+    "fromRoleId": "frontend-developer",
+    "toRoleId": "full-stack-developer",
+    "difficulty": "moderate",
+    "reason": "Frontend Developer experience transfers through HTML, CSS, JavaScript, while progress toward Full Stack Developer requires focused practice in Node.js, REST APIs."
+  },
+  {
+    "fromRoleId": "frontend-developer",
+    "toRoleId": "ux-engineer",
+    "difficulty": "easy",
+    "reason": "Frontend Developer experience transfers through HTML, CSS, JavaScript, while progress toward UX Engineer requires focused practice in UI/UX, Communication."
+  },
+  {
+    "fromRoleId": "frontend-developer",
+    "toRoleId": "product-engineer",
+    "difficulty": "moderate",
+    "reason": "Frontend Developer experience transfers through JavaScript, TypeScript, React, while progress toward Product Engineer requires focused practice in Node.js, REST APIs."
+  },
+  {
+    "fromRoleId": "ux-engineer",
+    "toRoleId": "frontend-developer",
+    "difficulty": "easy",
+    "reason": "UX Engineer experience transfers through HTML, CSS, JavaScript, while progress toward Frontend Developer requires focused practice in Next.js, Git."
+  },
+  {
+    "fromRoleId": "ux-engineer",
+    "toRoleId": "product-engineer",
+    "difficulty": "moderate",
+    "reason": "UX Engineer experience transfers through JavaScript, TypeScript, React, while progress toward Product Engineer requires focused practice in Node.js, REST APIs."
+  },
+  {
+    "fromRoleId": "product-engineer",
+    "toRoleId": "full-stack-developer",
+    "difficulty": "easy",
+    "reason": "Product Engineer experience transfers through JavaScript, TypeScript, React, while progress toward Full Stack Developer requires focused practice in HTML, CSS."
+  },
+  {
+    "fromRoleId": "full-stack-developer",
+    "toRoleId": "backend-developer",
+    "difficulty": "moderate",
+    "reason": "Full Stack Developer experience transfers through TypeScript, Node.js, REST APIs, while progress toward Backend Developer requires focused practice in Python, Data Modeling."
+  },
+  {
+    "fromRoleId": "full-stack-developer",
+    "toRoleId": "frontend-developer",
+    "difficulty": "easy",
+    "reason": "Full Stack Developer experience transfers through HTML, CSS, JavaScript, while progress toward Frontend Developer requires focused practice in Next.js, Tailwind CSS."
+  },
+  {
+    "fromRoleId": "full-stack-developer",
+    "toRoleId": "product-engineer",
+    "difficulty": "easy",
+    "reason": "Full Stack Developer experience transfers through JavaScript, TypeScript, React, while progress toward Product Engineer requires focused practice in GraphQL, UI/UX."
+  },
+  {
+    "fromRoleId": "full-stack-developer",
+    "toRoleId": "data-engineer",
+    "difficulty": "hard",
+    "reason": "Full Stack Developer experience transfers through SQL, Git, while progress toward Data Engineer requires focused practice in Python, ETL."
+  },
+  {
+    "fromRoleId": "backend-developer",
+    "toRoleId": "full-stack-developer",
+    "difficulty": "easy",
+    "reason": "Backend Developer experience transfers through TypeScript, Node.js, REST APIs, while progress toward Full Stack Developer requires focused practice in HTML, CSS."
+  },
+  {
+    "fromRoleId": "backend-developer",
+    "toRoleId": "data-engineer",
+    "difficulty": "moderate",
+    "reason": "Backend Developer experience transfers through Python, SQL, Data Modeling, while progress toward Data Engineer requires focused practice in ETL, Data Warehousing."
+  },
+  {
+    "fromRoleId": "backend-developer",
+    "toRoleId": "graph-database-developer",
+    "difficulty": "moderate",
+    "reason": "Backend Developer experience transfers through TypeScript, Python, REST APIs, while progress toward Graph Database Developer requires focused practice in Graph Databases, Cypher."
+  },
+  {
+    "fromRoleId": "backend-developer",
+    "toRoleId": "machine-learning-engineer",
+    "difficulty": "hard",
+    "reason": "Backend Developer experience transfers through Python, while progress toward Machine Learning Engineer requires focused practice in Machine Learning, Deep Learning."
+  },
+  {
+    "fromRoleId": "backend-developer",
+    "toRoleId": "devops-engineer",
+    "difficulty": "moderate",
+    "reason": "Backend Developer experience transfers through , while progress toward DevOps Engineer requires focused practice in Linux, Git."
+  },
+  {
+    "fromRoleId": "mobile-developer",
+    "toRoleId": "ios-developer",
+    "difficulty": "moderate",
+    "reason": "Mobile Developer experience transfers through REST APIs, Git, Software Testing, while progress toward iOS Developer requires focused practice in Swift, Application Security."
+  },
+  {
+    "fromRoleId": "mobile-developer",
+    "toRoleId": "android-developer",
+    "difficulty": "moderate",
+    "reason": "Mobile Developer experience transfers through REST APIs, Git, Software Testing, while progress toward Android Developer requires focused practice in Kotlin, Java."
+  },
+  {
+    "fromRoleId": "mobile-developer",
+    "toRoleId": "product-engineer",
+    "difficulty": "moderate",
+    "reason": "Mobile Developer experience transfers through REST APIs, Software Testing, UI/UX, while progress toward Product Engineer requires focused practice in JavaScript, React."
+  },
+  {
+    "fromRoleId": "ios-developer",
+    "toRoleId": "mobile-developer",
+    "difficulty": "easy",
+    "reason": "iOS Developer experience transfers through UI/UX, REST APIs, Git, while progress toward Mobile Developer requires focused practice in Dart, Flutter."
+  },
+  {
+    "fromRoleId": "android-developer",
+    "toRoleId": "mobile-developer",
+    "difficulty": "easy",
+    "reason": "Android Developer experience transfers through UI/UX, REST APIs, Git, while progress toward Mobile Developer requires focused practice in Dart, Flutter."
+  },
+  {
+    "fromRoleId": "software-engineer",
+    "toRoleId": "backend-developer",
+    "difficulty": "moderate",
+    "reason": "Software Engineer experience transfers through , while progress toward Backend Developer requires focused practice in TypeScript, Node.js."
+  },
+  {
+    "fromRoleId": "software-engineer",
+    "toRoleId": "devops-engineer",
+    "difficulty": "hard",
+    "reason": "Software Engineer experience transfers through , while progress toward DevOps Engineer requires focused practice in Linux, Git."
+  },
+  {
+    "fromRoleId": "software-engineer",
+    "toRoleId": "engineering-manager",
+    "difficulty": "hard",
+    "reason": "Software Engineer experience transfers through Software Testing, System Design, while progress toward Engineering Manager requires focused practice in Communication, Agile Delivery."
+  },
+  {
+    "fromRoleId": "qa-engineer",
+    "toRoleId": "software-engineer",
+    "difficulty": "moderate",
+    "reason": "QA Engineer experience transfers through Software Testing, while progress toward Software Engineer requires focused practice in Java, C#."
+  },
+  {
+    "fromRoleId": "qa-engineer",
+    "toRoleId": "devops-engineer",
+    "difficulty": "moderate",
+    "reason": "QA Engineer experience transfers through CI/CD, Git, Application Security, while progress toward DevOps Engineer requires focused practice in Linux, Docker."
+  },
+  {
+    "fromRoleId": "devops-engineer",
+    "toRoleId": "platform-engineer",
+    "difficulty": "moderate",
+    "reason": "DevOps Engineer experience transfers through Linux, Docker, Kubernetes, while progress toward Platform Engineer requires focused practice in System Design, Go."
+  },
+  {
+    "fromRoleId": "devops-engineer",
+    "toRoleId": "site-reliability-engineer",
+    "difficulty": "moderate",
+    "reason": "DevOps Engineer experience transfers through Linux, Docker, Kubernetes, while progress toward Site Reliability Engineer requires focused practice in Python, System Design."
+  },
+  {
+    "fromRoleId": "devops-engineer",
+    "toRoleId": "cloud-engineer",
+    "difficulty": "easy",
+    "reason": "DevOps Engineer experience transfers through Linux, Docker, Kubernetes, while progress toward Cloud Engineer requires focused practice in Microsoft Azure, Google Cloud."
+  },
+  {
+    "fromRoleId": "cloud-engineer",
+    "toRoleId": "solutions-architect",
+    "difficulty": "hard",
+    "reason": "Cloud Engineer experience transfers through AWS, Microsoft Azure, Google Cloud, while progress toward Solutions Architect requires focused practice in Communication, REST APIs."
+  },
+  {
+    "fromRoleId": "cloud-engineer",
+    "toRoleId": "devops-engineer",
+    "difficulty": "easy",
+    "reason": "Cloud Engineer experience transfers through AWS, Terraform, Docker, while progress toward DevOps Engineer requires focused practice in Git, CI/CD."
+  },
+  {
+    "fromRoleId": "cloud-engineer",
+    "toRoleId": "security-engineer",
+    "difficulty": "moderate",
+    "reason": "Cloud Engineer experience transfers through AWS, Docker, Linux, while progress toward Security Engineer requires focused practice in Python, Bash."
+  },
+  {
+    "fromRoleId": "site-reliability-engineer",
+    "toRoleId": "platform-engineer",
+    "difficulty": "easy",
+    "reason": "Site Reliability Engineer experience transfers through Linux, Observability, Kubernetes, while progress toward Platform Engineer requires focused practice in AWS, Go."
+  },
+  {
+    "fromRoleId": "site-reliability-engineer",
+    "toRoleId": "devops-engineer",
+    "difficulty": "easy",
+    "reason": "Site Reliability Engineer experience transfers through Linux, Observability, Kubernetes, while progress toward DevOps Engineer requires focused practice in Git, AWS."
+  },
+  {
+    "fromRoleId": "security-engineer",
+    "toRoleId": "cloud-engineer",
+    "difficulty": "moderate",
+    "reason": "Security Engineer experience transfers through Application Security, Linux, Docker, while progress toward Cloud Engineer requires focused practice in Microsoft Azure, Google Cloud."
+  },
+  {
+    "fromRoleId": "security-engineer",
+    "toRoleId": "solutions-architect",
+    "difficulty": "hard",
+    "reason": "Security Engineer experience transfers through Application Security, AWS, REST APIs, while progress toward Solutions Architect requires focused practice in Microsoft Azure, Google Cloud."
+  },
+  {
+    "fromRoleId": "database-engineer",
+    "toRoleId": "data-engineer",
+    "difficulty": "moderate",
+    "reason": "Database Engineer experience transfers through SQL, PostgreSQL, Data Modeling, while progress toward Data Engineer requires focused practice in Python, ETL."
+  },
+  {
+    "fromRoleId": "database-engineer",
+    "toRoleId": "graph-database-developer",
+    "difficulty": "easy",
+    "reason": "Database Engineer experience transfers through Data Modeling, Graph Databases, Cypher, while progress toward Graph Database Developer requires focused practice in Python, TypeScript."
+  },
+  {
+    "fromRoleId": "database-engineer",
+    "toRoleId": "data-architect",
+    "difficulty": "hard",
+    "reason": "Database Engineer experience transfers through SQL, Data Modeling, Graph Databases, while progress toward Data Architect requires focused practice in Data Warehousing, ETL."
+  },
+  {
+    "fromRoleId": "data-analyst",
+    "toRoleId": "analytics-engineer",
+    "difficulty": "moderate",
+    "reason": "Data Analyst experience transfers through SQL, Python, pandas, while progress toward Analytics Engineer requires focused practice in Git, Software Testing."
+  },
+  {
+    "fromRoleId": "data-analyst",
+    "toRoleId": "data-scientist",
+    "difficulty": "moderate",
+    "reason": "Data Analyst experience transfers through SQL, Statistics, Python, while progress toward Data Scientist requires focused practice in Machine Learning, Feature Engineering."
+  },
+  {
+    "fromRoleId": "data-analyst",
+    "toRoleId": "technical-product-manager",
+    "difficulty": "moderate",
+    "reason": "Data Analyst experience transfers through Statistics, Data Modeling, Communication, while progress toward Technical Product Manager requires focused practice in Agile Delivery, System Design."
+  },
+  {
+    "fromRoleId": "data-engineer",
+    "toRoleId": "analytics-engineer",
+    "difficulty": "easy",
+    "reason": "Data Engineer experience transfers through Python, SQL, ETL, while progress toward Analytics Engineer requires focused practice in Software Testing, Communication."
+  },
+  {
+    "fromRoleId": "data-engineer",
+    "toRoleId": "data-scientist",
+    "difficulty": "moderate",
+    "reason": "Data Engineer experience transfers through Python, SQL, Data Modeling, while progress toward Data Scientist requires focused practice in Statistics, Machine Learning."
+  },
+  {
+    "fromRoleId": "data-engineer",
+    "toRoleId": "machine-learning-engineer",
+    "difficulty": "moderate",
+    "reason": "Data Engineer experience transfers through Python, Docker, AWS, while progress toward Machine Learning Engineer requires focused practice in Machine Learning, Deep Learning."
+  },
+  {
+    "fromRoleId": "data-engineer",
+    "toRoleId": "data-architect",
+    "difficulty": "hard",
+    "reason": "Data Engineer experience transfers through SQL, ETL, Data Warehousing, while progress toward Data Architect requires focused practice in Graph Databases, System Design."
+  },
+  {
+    "fromRoleId": "analytics-engineer",
+    "toRoleId": "data-engineer",
+    "difficulty": "moderate",
+    "reason": "Analytics Engineer experience transfers through SQL, Data Modeling, Data Warehousing, while progress toward Data Engineer requires focused practice in Apache Spark, Docker."
+  },
+  {
+    "fromRoleId": "analytics-engineer",
+    "toRoleId": "data-analyst",
+    "difficulty": "easy",
+    "reason": "Analytics Engineer experience transfers through SQL, Data Modeling, Data Warehousing, while progress toward Data Analyst requires focused practice in Statistics, Problem Solving."
+  },
+  {
+    "fromRoleId": "data-scientist",
+    "toRoleId": "machine-learning-engineer",
+    "difficulty": "moderate",
+    "reason": "Data Scientist experience transfers through Python, Machine Learning, Feature Engineering, while progress toward Machine Learning Engineer requires focused practice in Deep Learning, MLOps."
+  },
+  {
+    "fromRoleId": "data-scientist",
+    "toRoleId": "nlp-engineer",
+    "difficulty": "hard",
+    "reason": "Data Scientist experience transfers through Python, Statistics, Model Evaluation, while progress toward NLP Engineer requires focused practice in Natural Language Processing, Deep Learning."
+  },
+  {
+    "fromRoleId": "machine-learning-engineer",
+    "toRoleId": "ai-engineer",
+    "difficulty": "moderate",
+    "reason": "Machine Learning Engineer experience transfers through Python, Machine Learning, Deep Learning, while progress toward AI Engineer requires focused practice in Natural Language Processing, Large Language Models."
+  },
+  {
+    "fromRoleId": "machine-learning-engineer",
+    "toRoleId": "mlops-engineer",
+    "difficulty": "moderate",
+    "reason": "Machine Learning Engineer experience transfers through Python, Model Evaluation, MLOps, while progress toward MLOps Engineer requires focused practice in Kubernetes, CI/CD."
+  },
+  {
+    "fromRoleId": "machine-learning-engineer",
+    "toRoleId": "computer-vision-engineer",
+    "difficulty": "moderate",
+    "reason": "Machine Learning Engineer experience transfers through Python, Machine Learning, Deep Learning, while progress toward Computer Vision Engineer requires focused practice in Computer Vision, Statistics."
+  },
+  {
+    "fromRoleId": "ai-engineer",
+    "toRoleId": "nlp-engineer",
+    "difficulty": "moderate",
+    "reason": "AI Engineer experience transfers through Python, Deep Learning, Natural Language Processing, while progress toward NLP Engineer requires focused practice in Statistics, Data Structures."
+  },
+  {
+    "fromRoleId": "ai-engineer",
+    "toRoleId": "solutions-architect",
+    "difficulty": "hard",
+    "reason": "AI Engineer experience transfers through REST APIs, System Design, while progress toward Solutions Architect requires focused practice in AWS, Microsoft Azure."
+  },
+  {
+    "fromRoleId": "nlp-engineer",
+    "toRoleId": "ai-engineer",
+    "difficulty": "easy",
+    "reason": "NLP Engineer experience transfers through Python, Natural Language Processing, Deep Learning, while progress toward AI Engineer requires focused practice in Machine Learning, System Design."
+  },
+  {
+    "fromRoleId": "computer-vision-engineer",
+    "toRoleId": "machine-learning-engineer",
+    "difficulty": "easy",
+    "reason": "Computer Vision Engineer experience transfers through Python, Deep Learning, Machine Learning, while progress toward Machine Learning Engineer requires focused practice in AWS, Data Structures."
+  },
+  {
+    "fromRoleId": "mlops-engineer",
+    "toRoleId": "platform-engineer",
+    "difficulty": "moderate",
+    "reason": "MLOps Engineer experience transfers through Docker, Kubernetes, CI/CD, while progress toward Platform Engineer requires focused practice in Application Security, System Design."
+  },
+  {
+    "fromRoleId": "graph-database-developer",
+    "toRoleId": "data-architect",
+    "difficulty": "hard",
+    "reason": "Graph Database Developer experience transfers through Graph Databases, Cypher, Data Modeling, while progress toward Data Architect requires focused practice in SQL, Data Warehousing."
+  },
+  {
+    "fromRoleId": "data-architect",
+    "toRoleId": "solutions-architect",
+    "difficulty": "moderate",
+    "reason": "Data Architect experience transfers through Data Modeling, System Design, AWS, while progress toward Solutions Architect requires focused practice in Microsoft Azure, Google Cloud."
+  },
+  {
+    "fromRoleId": "solutions-architect",
+    "toRoleId": "technical-product-manager",
+    "difficulty": "moderate",
+    "reason": "Solutions Architect experience transfers through System Design, Communication, REST APIs, while progress toward Technical Product Manager requires focused practice in Agile Delivery, Problem Solving."
+  }
+]

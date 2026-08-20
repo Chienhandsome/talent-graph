@@ -1,0 +1,452 @@
+[
+  {
+    "fromSkillId": "javascript",
+    "toSkillId": "typescript",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "typescript",
+    "toSkillId": "python",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "python",
+    "toSkillId": "java",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "java",
+    "toSkillId": "c-sharp",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "c-sharp",
+    "toSkillId": "go",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "go",
+    "toSkillId": "rust",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "rust",
+    "toSkillId": "sql",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "sql",
+    "toSkillId": "html",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "html",
+    "toSkillId": "css",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "css",
+    "toSkillId": "bash",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "bash",
+    "toSkillId": "dart",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "dart",
+    "toSkillId": "kotlin",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "kotlin",
+    "toSkillId": "swift",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "swift",
+    "toSkillId": "r",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "r",
+    "toSkillId": "javascript",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "react",
+    "toSkillId": "next-js",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "next-js",
+    "toSkillId": "node-js",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "node-js",
+    "toSkillId": "express-js",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "express-js",
+    "toSkillId": "nest-js",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "nest-js",
+    "toSkillId": "django",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "django",
+    "toSkillId": "fastapi",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "fastapi",
+    "toSkillId": "spring-boot",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "spring-boot",
+    "toSkillId": "dotnet",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "dotnet",
+    "toSkillId": "flutter",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "flutter",
+    "toSkillId": "react-native",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "react-native",
+    "toSkillId": "tailwind-css",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "tailwind-css",
+    "toSkillId": "react",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "data-modeling",
+    "toSkillId": "postgresql",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "postgresql",
+    "toSkillId": "mongodb",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "mongodb",
+    "toSkillId": "redis",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "redis",
+    "toSkillId": "graph-databases",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "graph-databases",
+    "toSkillId": "cypher",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "cypher",
+    "toSkillId": "data-warehousing",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "data-warehousing",
+    "toSkillId": "etl",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "etl",
+    "toSkillId": "pandas",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "pandas",
+    "toSkillId": "spark",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "spark",
+    "toSkillId": "data-modeling",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "machine-learning",
+    "toSkillId": "deep-learning",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "deep-learning",
+    "toSkillId": "natural-language-processing",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "natural-language-processing",
+    "toSkillId": "computer-vision",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "computer-vision",
+    "toSkillId": "large-language-models",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "large-language-models",
+    "toSkillId": "prompt-engineering",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "prompt-engineering",
+    "toSkillId": "model-evaluation",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "model-evaluation",
+    "toSkillId": "feature-engineering",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "feature-engineering",
+    "toSkillId": "mlops",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "mlops",
+    "toSkillId": "statistics",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "statistics",
+    "toSkillId": "machine-learning",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "git",
+    "toSkillId": "docker",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "docker",
+    "toSkillId": "kubernetes",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "kubernetes",
+    "toSkillId": "aws",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "aws",
+    "toSkillId": "azure",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "azure",
+    "toSkillId": "gcp",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "gcp",
+    "toSkillId": "ci-cd",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "ci-cd",
+    "toSkillId": "linux",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "linux",
+    "toSkillId": "terraform",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "terraform",
+    "toSkillId": "observability",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "observability",
+    "toSkillId": "git",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "rest-apis",
+    "toSkillId": "graphql",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "graphql",
+    "toSkillId": "microservices",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "microservices",
+    "toSkillId": "system-design",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "system-design",
+    "toSkillId": "testing",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "testing",
+    "toSkillId": "security",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "security",
+    "toSkillId": "rest-apis",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "accessibility",
+    "toSkillId": "ui-ux",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "ui-ux",
+    "toSkillId": "agile",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "agile",
+    "toSkillId": "communication",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "communication",
+    "toSkillId": "accessibility",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "problem-solving",
+    "toSkillId": "data-structures",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "data-structures",
+    "toSkillId": "algorithms",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "algorithms",
+    "toSkillId": "problem-solving",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "javascript",
+    "toSkillId": "react",
+    "relevance": 5
+  },
+  {
+    "fromSkillId": "typescript",
+    "toSkillId": "next-js",
+    "relevance": 5
+  },
+  {
+    "fromSkillId": "python",
+    "toSkillId": "machine-learning",
+    "relevance": 5
+  },
+  {
+    "fromSkillId": "sql",
+    "toSkillId": "data-modeling",
+    "relevance": 5
+  },
+  {
+    "fromSkillId": "git",
+    "toSkillId": "ci-cd",
+    "relevance": 5
+  },
+  {
+    "fromSkillId": "docker",
+    "toSkillId": "observability",
+    "relevance": 5
+  },
+  {
+    "fromSkillId": "aws",
+    "toSkillId": "terraform",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "statistics",
+    "toSkillId": "model-evaluation",
+    "relevance": 5
+  },
+  {
+    "fromSkillId": "machine-learning",
+    "toSkillId": "feature-engineering",
+    "relevance": 5
+  },
+  {
+    "fromSkillId": "deep-learning",
+    "toSkillId": "model-evaluation",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "computer-vision",
+    "toSkillId": "feature-engineering",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "large-language-models",
+    "toSkillId": "model-evaluation",
+    "relevance": 5
+  },
+  {
+    "fromSkillId": "graph-databases",
+    "toSkillId": "rest-apis",
+    "relevance": 3
+  },
+  {
+    "fromSkillId": "react",
+    "toSkillId": "accessibility",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "testing",
+    "toSkillId": "ci-cd",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "system-design",
+    "toSkillId": "data-modeling",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "ui-ux",
+    "toSkillId": "css",
+    "relevance": 4
+  },
+  {
+    "fromSkillId": "agile",
+    "toSkillId": "git",
+    "relevance": 3
+  },
+  {
+    "fromSkillId": "algorithms",
+    "toSkillId": "testing",
+    "relevance": 3
+  },
+  {
+    "fromSkillId": "pandas",
+    "toSkillId": "statistics",
+    "relevance": 5
+  }
+]

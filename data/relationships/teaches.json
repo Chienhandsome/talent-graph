@@ -1,0 +1,302 @@
+[
+  {
+    "resourceId": "mdn-web-learning",
+    "skillId": "html"
+  },
+  {
+    "resourceId": "mdn-web-learning",
+    "skillId": "css"
+  },
+  {
+    "resourceId": "mdn-web-learning",
+    "skillId": "javascript"
+  },
+  {
+    "resourceId": "typescript-handbook",
+    "skillId": "typescript"
+  },
+  {
+    "resourceId": "typescript-handbook",
+    "skillId": "javascript"
+  },
+  {
+    "resourceId": "typescript-handbook",
+    "skillId": "data-structures"
+  },
+  {
+    "resourceId": "react-learn",
+    "skillId": "react"
+  },
+  {
+    "resourceId": "react-learn",
+    "skillId": "javascript"
+  },
+  {
+    "resourceId": "react-learn",
+    "skillId": "accessibility"
+  },
+  {
+    "resourceId": "nextjs-documentation",
+    "skillId": "next-js"
+  },
+  {
+    "resourceId": "nextjs-documentation",
+    "skillId": "react"
+  },
+  {
+    "resourceId": "nextjs-documentation",
+    "skillId": "typescript"
+  },
+  {
+    "resourceId": "nodejs-learn",
+    "skillId": "node-js"
+  },
+  {
+    "resourceId": "nodejs-learn",
+    "skillId": "javascript"
+  },
+  {
+    "resourceId": "nodejs-learn",
+    "skillId": "rest-apis"
+  },
+  {
+    "resourceId": "python-tutorial",
+    "skillId": "python"
+  },
+  {
+    "resourceId": "python-tutorial",
+    "skillId": "data-structures"
+  },
+  {
+    "resourceId": "python-tutorial",
+    "skillId": "algorithms"
+  },
+  {
+    "resourceId": "devjava-learning",
+    "skillId": "java"
+  },
+  {
+    "resourceId": "devjava-learning",
+    "skillId": "spring-boot"
+  },
+  {
+    "resourceId": "devjava-learning",
+    "skillId": "testing"
+  },
+  {
+    "resourceId": "csharp-documentation",
+    "skillId": "c-sharp"
+  },
+  {
+    "resourceId": "csharp-documentation",
+    "skillId": "dotnet"
+  },
+  {
+    "resourceId": "csharp-documentation",
+    "skillId": "rest-apis"
+  },
+  {
+    "resourceId": "tour-of-go",
+    "skillId": "go"
+  },
+  {
+    "resourceId": "tour-of-go",
+    "skillId": "microservices"
+  },
+  {
+    "resourceId": "tour-of-go",
+    "skillId": "testing"
+  },
+  {
+    "resourceId": "rust-book",
+    "skillId": "rust"
+  },
+  {
+    "resourceId": "rust-book",
+    "skillId": "data-structures"
+  },
+  {
+    "resourceId": "rust-book",
+    "skillId": "algorithms"
+  },
+  {
+    "resourceId": "flutter-get-started",
+    "skillId": "dart"
+  },
+  {
+    "resourceId": "flutter-get-started",
+    "skillId": "flutter"
+  },
+  {
+    "resourceId": "flutter-get-started",
+    "skillId": "ui-ux"
+  },
+  {
+    "resourceId": "android-courses",
+    "skillId": "kotlin"
+  },
+  {
+    "resourceId": "android-courses",
+    "skillId": "java"
+  },
+  {
+    "resourceId": "android-courses",
+    "skillId": "ui-ux"
+  },
+  {
+    "resourceId": "swift-book",
+    "skillId": "swift"
+  },
+  {
+    "resourceId": "swift-book",
+    "skillId": "ui-ux"
+  },
+  {
+    "resourceId": "swift-book",
+    "skillId": "accessibility"
+  },
+  {
+    "resourceId": "postgresql-tutorial",
+    "skillId": "sql"
+  },
+  {
+    "resourceId": "postgresql-tutorial",
+    "skillId": "postgresql"
+  },
+  {
+    "resourceId": "postgresql-tutorial",
+    "skillId": "data-modeling"
+  },
+  {
+    "resourceId": "mongodb-university",
+    "skillId": "mongodb"
+  },
+  {
+    "resourceId": "mongodb-university",
+    "skillId": "data-modeling"
+  },
+  {
+    "resourceId": "mongodb-university",
+    "skillId": "etl"
+  },
+  {
+    "resourceId": "cognodb-developer-guide",
+    "skillId": "graph-databases"
+  },
+  {
+    "resourceId": "cognodb-developer-guide",
+    "skillId": "cypher"
+  },
+  {
+    "resourceId": "cognodb-developer-guide",
+    "skillId": "data-modeling"
+  },
+  {
+    "resourceId": "pro-git",
+    "skillId": "git"
+  },
+  {
+    "resourceId": "pro-git",
+    "skillId": "ci-cd"
+  },
+  {
+    "resourceId": "pro-git",
+    "skillId": "agile"
+  },
+  {
+    "resourceId": "docker-get-started",
+    "skillId": "docker"
+  },
+  {
+    "resourceId": "docker-get-started",
+    "skillId": "linux"
+  },
+  {
+    "resourceId": "docker-get-started",
+    "skillId": "ci-cd"
+  },
+  {
+    "resourceId": "kubernetes-basics",
+    "skillId": "kubernetes"
+  },
+  {
+    "resourceId": "kubernetes-basics",
+    "skillId": "docker"
+  },
+  {
+    "resourceId": "kubernetes-basics",
+    "skillId": "observability"
+  },
+  {
+    "resourceId": "terraform-tutorials",
+    "skillId": "terraform"
+  },
+  {
+    "resourceId": "terraform-tutorials",
+    "skillId": "aws"
+  },
+  {
+    "resourceId": "terraform-tutorials",
+    "skillId": "azure"
+  },
+  {
+    "resourceId": "aws-skill-builder",
+    "skillId": "aws"
+  },
+  {
+    "resourceId": "aws-skill-builder",
+    "skillId": "system-design"
+  },
+  {
+    "resourceId": "aws-skill-builder",
+    "skillId": "security"
+  },
+  {
+    "resourceId": "google-ml-crash-course",
+    "skillId": "machine-learning"
+  },
+  {
+    "resourceId": "google-ml-crash-course",
+    "skillId": "feature-engineering"
+  },
+  {
+    "resourceId": "google-ml-crash-course",
+    "skillId": "model-evaluation"
+  },
+  {
+    "resourceId": "pytorch-tutorials",
+    "skillId": "deep-learning"
+  },
+  {
+    "resourceId": "pytorch-tutorials",
+    "skillId": "computer-vision"
+  },
+  {
+    "resourceId": "pytorch-tutorials",
+    "skillId": "natural-language-processing"
+  },
+  {
+    "resourceId": "huggingface-llm-course",
+    "skillId": "large-language-models"
+  },
+  {
+    "resourceId": "huggingface-llm-course",
+    "skillId": "natural-language-processing"
+  },
+  {
+    "resourceId": "huggingface-llm-course",
+    "skillId": "prompt-engineering"
+  },
+  {
+    "resourceId": "google-cloud-mlops",
+    "skillId": "mlops"
+  },
+  {
+    "resourceId": "google-cloud-mlops",
+    "skillId": "model-evaluation"
+  },
+  {
+    "resourceId": "google-cloud-mlops",
+    "skillId": "observability"
+  }
+]

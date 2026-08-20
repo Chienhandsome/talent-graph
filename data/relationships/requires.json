@@ -1,0 +1,2102 @@
+[
+  {
+    "roleId": "frontend-developer",
+    "skillId": "html",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "frontend-developer",
+    "skillId": "css",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "frontend-developer",
+    "skillId": "javascript",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "frontend-developer",
+    "skillId": "typescript",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "frontend-developer",
+    "skillId": "react",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "frontend-developer",
+    "skillId": "next-js",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "frontend-developer",
+    "skillId": "tailwind-css",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "frontend-developer",
+    "skillId": "accessibility",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "frontend-developer",
+    "skillId": "testing",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "frontend-developer",
+    "skillId": "git",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "backend-developer",
+    "skillId": "typescript",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "backend-developer",
+    "skillId": "node-js",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "backend-developer",
+    "skillId": "python",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "backend-developer",
+    "skillId": "rest-apis",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "backend-developer",
+    "skillId": "sql",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "backend-developer",
+    "skillId": "data-modeling",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "backend-developer",
+    "skillId": "nest-js",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "backend-developer",
+    "skillId": "express-js",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "backend-developer",
+    "skillId": "fastapi",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "backend-developer",
+    "skillId": "django",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "full-stack-developer",
+    "skillId": "html",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "full-stack-developer",
+    "skillId": "css",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "full-stack-developer",
+    "skillId": "javascript",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "full-stack-developer",
+    "skillId": "typescript",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "full-stack-developer",
+    "skillId": "react",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "full-stack-developer",
+    "skillId": "node-js",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "full-stack-developer",
+    "skillId": "rest-apis",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "full-stack-developer",
+    "skillId": "sql",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "full-stack-developer",
+    "skillId": "git",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "full-stack-developer",
+    "skillId": "testing",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "mobile-developer",
+    "skillId": "dart",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "mobile-developer",
+    "skillId": "flutter",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "mobile-developer",
+    "skillId": "react-native",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "mobile-developer",
+    "skillId": "rest-apis",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "mobile-developer",
+    "skillId": "git",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "mobile-developer",
+    "skillId": "testing",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "mobile-developer",
+    "skillId": "ui-ux",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "mobile-developer",
+    "skillId": "ci-cd",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "mobile-developer",
+    "skillId": "accessibility",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "mobile-developer",
+    "skillId": "typescript",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "ios-developer",
+    "skillId": "swift",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "ios-developer",
+    "skillId": "ui-ux",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "ios-developer",
+    "skillId": "rest-apis",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "ios-developer",
+    "skillId": "git",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "ios-developer",
+    "skillId": "testing",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "ios-developer",
+    "skillId": "ci-cd",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "ios-developer",
+    "skillId": "security",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "ios-developer",
+    "skillId": "algorithms",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "ios-developer",
+    "skillId": "data-structures",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "ios-developer",
+    "skillId": "accessibility",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "android-developer",
+    "skillId": "kotlin",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "android-developer",
+    "skillId": "java",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "android-developer",
+    "skillId": "ui-ux",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "android-developer",
+    "skillId": "rest-apis",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "android-developer",
+    "skillId": "git",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "android-developer",
+    "skillId": "testing",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "android-developer",
+    "skillId": "ci-cd",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "android-developer",
+    "skillId": "algorithms",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "android-developer",
+    "skillId": "data-structures",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "android-developer",
+    "skillId": "security",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "software-engineer",
+    "skillId": "java",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "software-engineer",
+    "skillId": "c-sharp",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "software-engineer",
+    "skillId": "go",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "software-engineer",
+    "skillId": "rust",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "software-engineer",
+    "skillId": "data-structures",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "software-engineer",
+    "skillId": "algorithms",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "software-engineer",
+    "skillId": "testing",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "software-engineer",
+    "skillId": "system-design",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "software-engineer",
+    "skillId": "dotnet",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "software-engineer",
+    "skillId": "spring-boot",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "qa-engineer",
+    "skillId": "testing",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "qa-engineer",
+    "skillId": "ci-cd",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "qa-engineer",
+    "skillId": "git",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "qa-engineer",
+    "skillId": "javascript",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "qa-engineer",
+    "skillId": "python",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "qa-engineer",
+    "skillId": "rest-apis",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "qa-engineer",
+    "skillId": "accessibility",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "qa-engineer",
+    "skillId": "communication",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "qa-engineer",
+    "skillId": "problem-solving",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "qa-engineer",
+    "skillId": "security",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "devops-engineer",
+    "skillId": "linux",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "devops-engineer",
+    "skillId": "git",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "devops-engineer",
+    "skillId": "docker",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "devops-engineer",
+    "skillId": "kubernetes",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "devops-engineer",
+    "skillId": "ci-cd",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "devops-engineer",
+    "skillId": "aws",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "devops-engineer",
+    "skillId": "terraform",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "devops-engineer",
+    "skillId": "observability",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "devops-engineer",
+    "skillId": "bash",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "devops-engineer",
+    "skillId": "security",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "cloud-engineer",
+    "skillId": "aws",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "cloud-engineer",
+    "skillId": "azure",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "cloud-engineer",
+    "skillId": "gcp",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "cloud-engineer",
+    "skillId": "terraform",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "cloud-engineer",
+    "skillId": "docker",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "cloud-engineer",
+    "skillId": "kubernetes",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "cloud-engineer",
+    "skillId": "linux",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "cloud-engineer",
+    "skillId": "security",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "cloud-engineer",
+    "skillId": "observability",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "cloud-engineer",
+    "skillId": "system-design",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "site-reliability-engineer",
+    "skillId": "linux",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "site-reliability-engineer",
+    "skillId": "observability",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "site-reliability-engineer",
+    "skillId": "kubernetes",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "site-reliability-engineer",
+    "skillId": "docker",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "site-reliability-engineer",
+    "skillId": "ci-cd",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "site-reliability-engineer",
+    "skillId": "python",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "site-reliability-engineer",
+    "skillId": "bash",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "site-reliability-engineer",
+    "skillId": "system-design",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "site-reliability-engineer",
+    "skillId": "security",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "site-reliability-engineer",
+    "skillId": "terraform",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "security-engineer",
+    "skillId": "security",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "security-engineer",
+    "skillId": "linux",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "security-engineer",
+    "skillId": "python",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "security-engineer",
+    "skillId": "bash",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "security-engineer",
+    "skillId": "docker",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "security-engineer",
+    "skillId": "aws",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "security-engineer",
+    "skillId": "testing",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "security-engineer",
+    "skillId": "rest-apis",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "security-engineer",
+    "skillId": "observability",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "security-engineer",
+    "skillId": "system-design",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "database-engineer",
+    "skillId": "sql",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "database-engineer",
+    "skillId": "postgresql",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "database-engineer",
+    "skillId": "mongodb",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "database-engineer",
+    "skillId": "redis",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "database-engineer",
+    "skillId": "data-modeling",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "database-engineer",
+    "skillId": "graph-databases",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "database-engineer",
+    "skillId": "cypher",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "database-engineer",
+    "skillId": "linux",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "database-engineer",
+    "skillId": "system-design",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "database-engineer",
+    "skillId": "security",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "data-analyst",
+    "skillId": "sql",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "data-analyst",
+    "skillId": "statistics",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "data-analyst",
+    "skillId": "python",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "data-analyst",
+    "skillId": "pandas",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "data-analyst",
+    "skillId": "data-modeling",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "data-analyst",
+    "skillId": "data-warehousing",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "data-analyst",
+    "skillId": "communication",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "data-analyst",
+    "skillId": "problem-solving",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "data-analyst",
+    "skillId": "etl",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "data-analyst",
+    "skillId": "r",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "data-engineer",
+    "skillId": "python",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "data-engineer",
+    "skillId": "sql",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "data-engineer",
+    "skillId": "etl",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "data-engineer",
+    "skillId": "data-warehousing",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "data-engineer",
+    "skillId": "spark",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "data-engineer",
+    "skillId": "postgresql",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "data-engineer",
+    "skillId": "docker",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "data-engineer",
+    "skillId": "aws",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "data-engineer",
+    "skillId": "data-modeling",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "data-engineer",
+    "skillId": "git",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "analytics-engineer",
+    "skillId": "sql",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "analytics-engineer",
+    "skillId": "data-modeling",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "analytics-engineer",
+    "skillId": "data-warehousing",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "analytics-engineer",
+    "skillId": "etl",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "analytics-engineer",
+    "skillId": "python",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "analytics-engineer",
+    "skillId": "git",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "analytics-engineer",
+    "skillId": "testing",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "analytics-engineer",
+    "skillId": "communication",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "analytics-engineer",
+    "skillId": "postgresql",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "analytics-engineer",
+    "skillId": "pandas",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "data-scientist",
+    "skillId": "python",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "data-scientist",
+    "skillId": "statistics",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "data-scientist",
+    "skillId": "machine-learning",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "data-scientist",
+    "skillId": "pandas",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "data-scientist",
+    "skillId": "sql",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "data-scientist",
+    "skillId": "feature-engineering",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "data-scientist",
+    "skillId": "model-evaluation",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "data-scientist",
+    "skillId": "communication",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "data-scientist",
+    "skillId": "r",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "data-scientist",
+    "skillId": "data-modeling",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "machine-learning-engineer",
+    "skillId": "python",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "machine-learning-engineer",
+    "skillId": "machine-learning",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "machine-learning-engineer",
+    "skillId": "deep-learning",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "machine-learning-engineer",
+    "skillId": "feature-engineering",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "machine-learning-engineer",
+    "skillId": "model-evaluation",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "machine-learning-engineer",
+    "skillId": "mlops",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "machine-learning-engineer",
+    "skillId": "docker",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "machine-learning-engineer",
+    "skillId": "aws",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "machine-learning-engineer",
+    "skillId": "data-structures",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "machine-learning-engineer",
+    "skillId": "algorithms",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "ai-engineer",
+    "skillId": "python",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "ai-engineer",
+    "skillId": "machine-learning",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "ai-engineer",
+    "skillId": "deep-learning",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "ai-engineer",
+    "skillId": "natural-language-processing",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "ai-engineer",
+    "skillId": "large-language-models",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "ai-engineer",
+    "skillId": "prompt-engineering",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "ai-engineer",
+    "skillId": "model-evaluation",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "ai-engineer",
+    "skillId": "mlops",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "ai-engineer",
+    "skillId": "rest-apis",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "ai-engineer",
+    "skillId": "system-design",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "nlp-engineer",
+    "skillId": "python",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "nlp-engineer",
+    "skillId": "natural-language-processing",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "nlp-engineer",
+    "skillId": "deep-learning",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "nlp-engineer",
+    "skillId": "large-language-models",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "nlp-engineer",
+    "skillId": "prompt-engineering",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "nlp-engineer",
+    "skillId": "model-evaluation",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "nlp-engineer",
+    "skillId": "mlops",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "nlp-engineer",
+    "skillId": "statistics",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "nlp-engineer",
+    "skillId": "rest-apis",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "nlp-engineer",
+    "skillId": "data-structures",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "computer-vision-engineer",
+    "skillId": "python",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "computer-vision-engineer",
+    "skillId": "computer-vision",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "computer-vision-engineer",
+    "skillId": "deep-learning",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "computer-vision-engineer",
+    "skillId": "machine-learning",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "computer-vision-engineer",
+    "skillId": "model-evaluation",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "computer-vision-engineer",
+    "skillId": "feature-engineering",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "computer-vision-engineer",
+    "skillId": "mlops",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "computer-vision-engineer",
+    "skillId": "statistics",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "computer-vision-engineer",
+    "skillId": "docker",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "computer-vision-engineer",
+    "skillId": "algorithms",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "mlops-engineer",
+    "skillId": "python",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "mlops-engineer",
+    "skillId": "mlops",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "mlops-engineer",
+    "skillId": "docker",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "mlops-engineer",
+    "skillId": "kubernetes",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "mlops-engineer",
+    "skillId": "ci-cd",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "mlops-engineer",
+    "skillId": "aws",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "mlops-engineer",
+    "skillId": "observability",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "mlops-engineer",
+    "skillId": "model-evaluation",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "mlops-engineer",
+    "skillId": "terraform",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "mlops-engineer",
+    "skillId": "linux",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "graph-database-developer",
+    "skillId": "graph-databases",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "graph-database-developer",
+    "skillId": "cypher",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "graph-database-developer",
+    "skillId": "data-modeling",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "graph-database-developer",
+    "skillId": "python",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "graph-database-developer",
+    "skillId": "typescript",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "graph-database-developer",
+    "skillId": "rest-apis",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "graph-database-developer",
+    "skillId": "system-design",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "graph-database-developer",
+    "skillId": "testing",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "graph-database-developer",
+    "skillId": "security",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "graph-database-developer",
+    "skillId": "aws",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "data-architect",
+    "skillId": "data-modeling",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "data-architect",
+    "skillId": "sql",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "data-architect",
+    "skillId": "data-warehousing",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "data-architect",
+    "skillId": "etl",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "data-architect",
+    "skillId": "graph-databases",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "data-architect",
+    "skillId": "system-design",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "data-architect",
+    "skillId": "aws",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "data-architect",
+    "skillId": "security",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "data-architect",
+    "skillId": "communication",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "data-architect",
+    "skillId": "cypher",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "solutions-architect",
+    "skillId": "system-design",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "solutions-architect",
+    "skillId": "aws",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "solutions-architect",
+    "skillId": "azure",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "solutions-architect",
+    "skillId": "gcp",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "solutions-architect",
+    "skillId": "security",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "solutions-architect",
+    "skillId": "communication",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "solutions-architect",
+    "skillId": "rest-apis",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "solutions-architect",
+    "skillId": "microservices",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "solutions-architect",
+    "skillId": "data-modeling",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "solutions-architect",
+    "skillId": "terraform",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "product-engineer",
+    "skillId": "javascript",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "product-engineer",
+    "skillId": "typescript",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "product-engineer",
+    "skillId": "react",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "product-engineer",
+    "skillId": "node-js",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "product-engineer",
+    "skillId": "rest-apis",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "product-engineer",
+    "skillId": "graphql",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "product-engineer",
+    "skillId": "testing",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "product-engineer",
+    "skillId": "ui-ux",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "product-engineer",
+    "skillId": "agile",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "product-engineer",
+    "skillId": "communication",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "technical-product-manager",
+    "skillId": "agile",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "technical-product-manager",
+    "skillId": "communication",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "technical-product-manager",
+    "skillId": "problem-solving",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "technical-product-manager",
+    "skillId": "system-design",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "technical-product-manager",
+    "skillId": "data-modeling",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "technical-product-manager",
+    "skillId": "ui-ux",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "technical-product-manager",
+    "skillId": "statistics",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "technical-product-manager",
+    "skillId": "git",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "technical-product-manager",
+    "skillId": "rest-apis",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "technical-product-manager",
+    "skillId": "accessibility",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "ux-engineer",
+    "skillId": "html",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "ux-engineer",
+    "skillId": "css",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "ux-engineer",
+    "skillId": "javascript",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "ux-engineer",
+    "skillId": "typescript",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "ux-engineer",
+    "skillId": "react",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "ux-engineer",
+    "skillId": "accessibility",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "ux-engineer",
+    "skillId": "ui-ux",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "ux-engineer",
+    "skillId": "testing",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "ux-engineer",
+    "skillId": "communication",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "ux-engineer",
+    "skillId": "tailwind-css",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "platform-engineer",
+    "skillId": "linux",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "platform-engineer",
+    "skillId": "docker",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "platform-engineer",
+    "skillId": "kubernetes",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "platform-engineer",
+    "skillId": "terraform",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "platform-engineer",
+    "skillId": "ci-cd",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "platform-engineer",
+    "skillId": "aws",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "platform-engineer",
+    "skillId": "observability",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "platform-engineer",
+    "skillId": "security",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "platform-engineer",
+    "skillId": "system-design",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "platform-engineer",
+    "skillId": "go",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "engineering-manager",
+    "skillId": "communication",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "engineering-manager",
+    "skillId": "agile",
+    "importance": 5,
+    "requiredLevel": "advanced",
+    "essential": true
+  },
+  {
+    "roleId": "engineering-manager",
+    "skillId": "system-design",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "engineering-manager",
+    "skillId": "security",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "engineering-manager",
+    "skillId": "testing",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "engineering-manager",
+    "skillId": "observability",
+    "importance": 4,
+    "requiredLevel": "intermediate",
+    "essential": true
+  },
+  {
+    "roleId": "engineering-manager",
+    "skillId": "problem-solving",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "engineering-manager",
+    "skillId": "git",
+    "importance": 3,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "engineering-manager",
+    "skillId": "aws",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  },
+  {
+    "roleId": "engineering-manager",
+    "skillId": "ci-cd",
+    "importance": 2,
+    "requiredLevel": "beginner",
+    "essential": false
+  }
+]

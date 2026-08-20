@@ -1,0 +1,562 @@
+[
+  {
+    "id": "javascript",
+    "slug": "javascript",
+    "name": "JavaScript",
+    "category": "Programming & Web",
+    "description": "Knowledge and practical application of JavaScript in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "typescript",
+    "slug": "typescript",
+    "name": "TypeScript",
+    "category": "Programming & Web",
+    "description": "Knowledge and practical application of TypeScript in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "python",
+    "slug": "python",
+    "name": "Python",
+    "category": "Programming & Web",
+    "description": "Knowledge and practical application of Python in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "java",
+    "slug": "java",
+    "name": "Java",
+    "category": "Programming & Web",
+    "description": "Knowledge and practical application of Java in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "c-sharp",
+    "slug": "c-sharp",
+    "name": "C#",
+    "category": "Programming & Web",
+    "description": "Knowledge and practical application of C# in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "go",
+    "slug": "go",
+    "name": "Go",
+    "category": "Programming & Web",
+    "description": "Knowledge and practical application of Go in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "rust",
+    "slug": "rust",
+    "name": "Rust",
+    "category": "Programming & Web",
+    "description": "Knowledge and practical application of Rust in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "sql",
+    "slug": "sql",
+    "name": "SQL",
+    "category": "Programming & Web",
+    "description": "Knowledge and practical application of SQL in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "html",
+    "slug": "html",
+    "name": "HTML",
+    "category": "Programming & Web",
+    "description": "Knowledge and practical application of HTML in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "css",
+    "slug": "css",
+    "name": "CSS",
+    "category": "Programming & Web",
+    "description": "Knowledge and practical application of CSS in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "bash",
+    "slug": "bash",
+    "name": "Bash",
+    "category": "Programming & Web",
+    "description": "Knowledge and practical application of Bash in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "dart",
+    "slug": "dart",
+    "name": "Dart",
+    "category": "Programming & Web",
+    "description": "Knowledge and practical application of Dart in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "kotlin",
+    "slug": "kotlin",
+    "name": "Kotlin",
+    "category": "Programming & Web",
+    "description": "Knowledge and practical application of Kotlin in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "swift",
+    "slug": "swift",
+    "name": "Swift",
+    "category": "Programming & Web",
+    "description": "Knowledge and practical application of Swift in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "r",
+    "slug": "r",
+    "name": "R",
+    "category": "Programming & Web",
+    "description": "Knowledge and practical application of R in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "react",
+    "slug": "react",
+    "name": "React",
+    "category": "Frameworks",
+    "description": "Knowledge and practical application of React in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "next-js",
+    "slug": "next-js",
+    "name": "Next.js",
+    "category": "Frameworks",
+    "description": "Knowledge and practical application of Next.js in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "node-js",
+    "slug": "node-js",
+    "name": "Node.js",
+    "category": "Frameworks",
+    "description": "Knowledge and practical application of Node.js in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "express-js",
+    "slug": "express-js",
+    "name": "Express.js",
+    "category": "Frameworks",
+    "description": "Knowledge and practical application of Express.js in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "nest-js",
+    "slug": "nest-js",
+    "name": "NestJS",
+    "category": "Frameworks",
+    "description": "Knowledge and practical application of NestJS in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "django",
+    "slug": "django",
+    "name": "Django",
+    "category": "Frameworks",
+    "description": "Knowledge and practical application of Django in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "fastapi",
+    "slug": "fastapi",
+    "name": "FastAPI",
+    "category": "Frameworks",
+    "description": "Knowledge and practical application of FastAPI in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "spring-boot",
+    "slug": "spring-boot",
+    "name": "Spring Boot",
+    "category": "Frameworks",
+    "description": "Knowledge and practical application of Spring Boot in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "dotnet",
+    "slug": "dotnet",
+    "name": ".NET",
+    "category": "Frameworks",
+    "description": "Knowledge and practical application of .NET in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "flutter",
+    "slug": "flutter",
+    "name": "Flutter",
+    "category": "Frameworks",
+    "description": "Knowledge and practical application of Flutter in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "react-native",
+    "slug": "react-native",
+    "name": "React Native",
+    "category": "Frameworks",
+    "description": "Knowledge and practical application of React Native in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "tailwind-css",
+    "slug": "tailwind-css",
+    "name": "Tailwind CSS",
+    "category": "Frameworks",
+    "description": "Knowledge and practical application of Tailwind CSS in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "data-modeling",
+    "slug": "data-modeling",
+    "name": "Data Modeling",
+    "category": "Data",
+    "description": "Knowledge and practical application of Data Modeling in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "postgresql",
+    "slug": "postgresql",
+    "name": "PostgreSQL",
+    "category": "Data",
+    "description": "Knowledge and practical application of PostgreSQL in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "mongodb",
+    "slug": "mongodb",
+    "name": "MongoDB",
+    "category": "Data",
+    "description": "Knowledge and practical application of MongoDB in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "redis",
+    "slug": "redis",
+    "name": "Redis",
+    "category": "Data",
+    "description": "Knowledge and practical application of Redis in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "graph-databases",
+    "slug": "graph-databases",
+    "name": "Graph Databases",
+    "category": "Data",
+    "description": "Knowledge and practical application of Graph Databases in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "cypher",
+    "slug": "cypher",
+    "name": "Cypher",
+    "category": "Data",
+    "description": "Knowledge and practical application of Cypher in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "data-warehousing",
+    "slug": "data-warehousing",
+    "name": "Data Warehousing",
+    "category": "Data",
+    "description": "Knowledge and practical application of Data Warehousing in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "etl",
+    "slug": "etl",
+    "name": "ETL",
+    "category": "Data",
+    "description": "Knowledge and practical application of ETL in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "pandas",
+    "slug": "pandas",
+    "name": "pandas",
+    "category": "Data",
+    "description": "Knowledge and practical application of pandas in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "spark",
+    "slug": "spark",
+    "name": "Apache Spark",
+    "category": "Data",
+    "description": "Knowledge and practical application of Apache Spark in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "machine-learning",
+    "slug": "machine-learning",
+    "name": "Machine Learning",
+    "category": "AI & ML",
+    "description": "Knowledge and practical application of Machine Learning in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "deep-learning",
+    "slug": "deep-learning",
+    "name": "Deep Learning",
+    "category": "AI & ML",
+    "description": "Knowledge and practical application of Deep Learning in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "natural-language-processing",
+    "slug": "natural-language-processing",
+    "name": "Natural Language Processing",
+    "category": "AI & ML",
+    "description": "Knowledge and practical application of Natural Language Processing in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "computer-vision",
+    "slug": "computer-vision",
+    "name": "Computer Vision",
+    "category": "AI & ML",
+    "description": "Knowledge and practical application of Computer Vision in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "large-language-models",
+    "slug": "large-language-models",
+    "name": "Large Language Models",
+    "category": "AI & ML",
+    "description": "Knowledge and practical application of Large Language Models in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "prompt-engineering",
+    "slug": "prompt-engineering",
+    "name": "Prompt Engineering",
+    "category": "AI & ML",
+    "description": "Knowledge and practical application of Prompt Engineering in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "model-evaluation",
+    "slug": "model-evaluation",
+    "name": "Model Evaluation",
+    "category": "AI & ML",
+    "description": "Knowledge and practical application of Model Evaluation in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "feature-engineering",
+    "slug": "feature-engineering",
+    "name": "Feature Engineering",
+    "category": "AI & ML",
+    "description": "Knowledge and practical application of Feature Engineering in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "mlops",
+    "slug": "mlops",
+    "name": "MLOps",
+    "category": "AI & ML",
+    "description": "Knowledge and practical application of MLOps in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "statistics",
+    "slug": "statistics",
+    "name": "Statistics",
+    "category": "AI & ML",
+    "description": "Knowledge and practical application of Statistics in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "git",
+    "slug": "git",
+    "name": "Git",
+    "category": "Cloud & DevOps",
+    "description": "Knowledge and practical application of Git in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "docker",
+    "slug": "docker",
+    "name": "Docker",
+    "category": "Cloud & DevOps",
+    "description": "Knowledge and practical application of Docker in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "kubernetes",
+    "slug": "kubernetes",
+    "name": "Kubernetes",
+    "category": "Cloud & DevOps",
+    "description": "Knowledge and practical application of Kubernetes in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "aws",
+    "slug": "aws",
+    "name": "AWS",
+    "category": "Cloud & DevOps",
+    "description": "Knowledge and practical application of AWS in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "azure",
+    "slug": "azure",
+    "name": "Microsoft Azure",
+    "category": "Cloud & DevOps",
+    "description": "Knowledge and practical application of Microsoft Azure in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "gcp",
+    "slug": "gcp",
+    "name": "Google Cloud",
+    "category": "Cloud & DevOps",
+    "description": "Knowledge and practical application of Google Cloud in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "ci-cd",
+    "slug": "ci-cd",
+    "name": "CI/CD",
+    "category": "Cloud & DevOps",
+    "description": "Knowledge and practical application of CI/CD in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "linux",
+    "slug": "linux",
+    "name": "Linux",
+    "category": "Cloud & DevOps",
+    "description": "Knowledge and practical application of Linux in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "terraform",
+    "slug": "terraform",
+    "name": "Terraform",
+    "category": "Cloud & DevOps",
+    "description": "Knowledge and practical application of Terraform in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "observability",
+    "slug": "observability",
+    "name": "Observability",
+    "category": "Cloud & DevOps",
+    "description": "Knowledge and practical application of Observability in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "rest-apis",
+    "slug": "rest-apis",
+    "name": "REST APIs",
+    "category": "Software Engineering",
+    "description": "Knowledge and practical application of REST APIs in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "graphql",
+    "slug": "graphql",
+    "name": "GraphQL",
+    "category": "Software Engineering",
+    "description": "Knowledge and practical application of GraphQL in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "microservices",
+    "slug": "microservices",
+    "name": "Microservices",
+    "category": "Software Engineering",
+    "description": "Knowledge and practical application of Microservices in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "system-design",
+    "slug": "system-design",
+    "name": "System Design",
+    "category": "Software Engineering",
+    "description": "Knowledge and practical application of System Design in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "testing",
+    "slug": "testing",
+    "name": "Software Testing",
+    "category": "Software Engineering",
+    "description": "Knowledge and practical application of Software Testing in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "security",
+    "slug": "security",
+    "name": "Application Security",
+    "category": "Software Engineering",
+    "description": "Knowledge and practical application of Application Security in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "accessibility",
+    "slug": "accessibility",
+    "name": "Accessibility",
+    "category": "Product & Delivery",
+    "description": "Knowledge and practical application of Accessibility in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "ui-ux",
+    "slug": "ui-ux",
+    "name": "UI/UX",
+    "category": "Product & Delivery",
+    "description": "Knowledge and practical application of UI/UX in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "agile",
+    "slug": "agile",
+    "name": "Agile Delivery",
+    "category": "Product & Delivery",
+    "description": "Knowledge and practical application of Agile Delivery in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "communication",
+    "slug": "communication",
+    "name": "Communication",
+    "category": "Product & Delivery",
+    "description": "Knowledge and practical application of Communication in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "problem-solving",
+    "slug": "problem-solving",
+    "name": "Problem Solving",
+    "category": "Foundations",
+    "description": "Knowledge and practical application of Problem Solving in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "data-structures",
+    "slug": "data-structures",
+    "name": "Data Structures",
+    "category": "Foundations",
+    "description": "Knowledge and practical application of Data Structures in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "algorithms",
+    "slug": "algorithms",
+    "name": "Algorithms",
+    "category": "Foundations",
+    "description": "Knowledge and practical application of Algorithms in software and data projects.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  }
+]

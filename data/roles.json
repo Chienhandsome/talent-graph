@@ -1,0 +1,272 @@
+[
+  {
+    "id": "frontend-developer",
+    "slug": "frontend-developer",
+    "name": "Frontend Developer",
+    "category": "Web Development",
+    "seniority": "entry",
+    "summary": "Builds accessible browser interfaces and turns product designs into responsive web experiences.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "backend-developer",
+    "slug": "backend-developer",
+    "name": "Backend Developer",
+    "category": "Web Development",
+    "seniority": "mid",
+    "summary": "Designs reliable server APIs, business logic, persistence layers, and service integrations.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "full-stack-developer",
+    "slug": "full-stack-developer",
+    "name": "Full Stack Developer",
+    "category": "Web Development",
+    "seniority": "mid",
+    "summary": "Delivers complete web features across browser interfaces, APIs, and relational persistence.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "mobile-developer",
+    "slug": "mobile-developer",
+    "name": "Mobile Developer",
+    "category": "Mobile Development",
+    "seniority": "mid",
+    "summary": "Creates cross-platform mobile applications with usable interfaces and dependable API integration.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "ios-developer",
+    "slug": "ios-developer",
+    "name": "iOS Developer",
+    "category": "Mobile Development",
+    "seniority": "mid",
+    "summary": "Builds secure and accessible native applications for Apple platforms using Swift.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "android-developer",
+    "slug": "android-developer",
+    "name": "Android Developer",
+    "category": "Mobile Development",
+    "seniority": "mid",
+    "summary": "Builds maintainable native Android applications and integrates them with backend services.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "software-engineer",
+    "slug": "software-engineer",
+    "name": "Software Engineer",
+    "category": "Software Engineering",
+    "seniority": "mid",
+    "summary": "Solves general software problems with sound algorithms, design principles, and production-quality code.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "qa-engineer",
+    "slug": "qa-engineer",
+    "name": "QA Engineer",
+    "category": "Quality Engineering",
+    "seniority": "entry",
+    "summary": "Prevents regressions through automated testing, exploratory analysis, and clear quality communication.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "devops-engineer",
+    "slug": "devops-engineer",
+    "name": "DevOps Engineer",
+    "category": "Infrastructure",
+    "seniority": "mid",
+    "summary": "Automates delivery pipelines and operates reliable cloud infrastructure for software teams.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "cloud-engineer",
+    "slug": "cloud-engineer",
+    "name": "Cloud Engineer",
+    "category": "Infrastructure",
+    "seniority": "mid",
+    "summary": "Designs and operates secure infrastructure across public cloud platforms using automation.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "site-reliability-engineer",
+    "slug": "site-reliability-engineer",
+    "name": "Site Reliability Engineer",
+    "category": "Infrastructure",
+    "seniority": "senior",
+    "summary": "Applies software engineering to availability, incident response, capacity, and production operations.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "security-engineer",
+    "slug": "security-engineer",
+    "name": "Security Engineer",
+    "category": "Security",
+    "seniority": "senior",
+    "summary": "Reduces application and infrastructure risk through secure design, testing, and monitoring.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "database-engineer",
+    "slug": "database-engineer",
+    "name": "Database Engineer",
+    "category": "Data",
+    "seniority": "mid",
+    "summary": "Designs, tunes, and operates dependable data stores for transactional application workloads.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "data-analyst",
+    "slug": "data-analyst",
+    "name": "Data Analyst",
+    "category": "Data",
+    "seniority": "entry",
+    "summary": "Transforms business questions into trustworthy analysis, metrics, and clearly communicated findings.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "data-engineer",
+    "slug": "data-engineer",
+    "name": "Data Engineer",
+    "category": "Data",
+    "seniority": "mid",
+    "summary": "Builds reliable batch and streaming pipelines that make governed data available at scale.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "analytics-engineer",
+    "slug": "analytics-engineer",
+    "name": "Analytics Engineer",
+    "category": "Data",
+    "seniority": "mid",
+    "summary": "Models tested warehouse data into reusable datasets for reporting and decision making.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "data-scientist",
+    "slug": "data-scientist",
+    "name": "Data Scientist",
+    "category": "AI & Data Science",
+    "seniority": "mid",
+    "summary": "Uses statistics and machine learning to investigate data and validate predictive solutions.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "machine-learning-engineer",
+    "slug": "machine-learning-engineer",
+    "name": "Machine Learning Engineer",
+    "category": "AI & Data Science",
+    "seniority": "senior",
+    "summary": "Turns validated models into scalable, tested, monitored production machine-learning systems.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "ai-engineer",
+    "slug": "ai-engineer",
+    "name": "AI Engineer",
+    "category": "AI & Data Science",
+    "seniority": "senior",
+    "summary": "Builds production AI features that combine models, evaluation, APIs, and responsible operations.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "nlp-engineer",
+    "slug": "nlp-engineer",
+    "name": "NLP Engineer",
+    "category": "AI & Data Science",
+    "seniority": "senior",
+    "summary": "Develops and evaluates language understanding and generation systems for real products.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "computer-vision-engineer",
+    "slug": "computer-vision-engineer",
+    "name": "Computer Vision Engineer",
+    "category": "AI & Data Science",
+    "seniority": "senior",
+    "summary": "Creates and deploys image and video models with measurable real-world performance.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "mlops-engineer",
+    "slug": "mlops-engineer",
+    "name": "MLOps Engineer",
+    "category": "AI Infrastructure",
+    "seniority": "senior",
+    "summary": "Automates model delivery, reproducibility, monitoring, and infrastructure across the ML lifecycle.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "graph-database-developer",
+    "slug": "graph-database-developer",
+    "name": "Graph Database Developer",
+    "category": "Data",
+    "seniority": "mid",
+    "summary": "Models connected domains and builds bounded graph queries and APIs for application use cases.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "data-architect",
+    "slug": "data-architect",
+    "name": "Data Architect",
+    "category": "Architecture",
+    "seniority": "lead",
+    "summary": "Defines scalable data models, integration patterns, governance boundaries, and platform direction.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "solutions-architect",
+    "slug": "solutions-architect",
+    "name": "Solutions Architect",
+    "category": "Architecture",
+    "seniority": "lead",
+    "summary": "Translates business constraints into secure, operable, and clearly communicated system designs.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "product-engineer",
+    "slug": "product-engineer",
+    "name": "Product Engineer",
+    "category": "Product Development",
+    "seniority": "mid",
+    "summary": "Balances customer outcomes and engineering quality while shipping complete product increments.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "technical-product-manager",
+    "slug": "technical-product-manager",
+    "name": "Technical Product Manager",
+    "category": "Product Development",
+    "seniority": "senior",
+    "summary": "Aligns technical teams around measurable outcomes, constraints, sequencing, and user value.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "ux-engineer",
+    "slug": "ux-engineer",
+    "name": "UX Engineer",
+    "category": "Product Development",
+    "seniority": "mid",
+    "summary": "Bridges design and engineering through accessible prototypes and production interface systems.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "platform-engineer",
+    "slug": "platform-engineer",
+    "name": "Platform Engineer",
+    "category": "Infrastructure",
+    "seniority": "senior",
+    "summary": "Creates secure self-service infrastructure that improves developer delivery and reliability.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  },
+  {
+    "id": "engineering-manager",
+    "slug": "engineering-manager",
+    "name": "Engineering Manager",
+    "category": "Leadership",
+    "seniority": "lead",
+    "summary": "Builds healthy engineering teams and guides delivery, quality, reliability, and technical decisions.",
+    "source": "Curated synthetic taxonomy inspired by public O*NET and ESCO concepts"
+  }
+]
