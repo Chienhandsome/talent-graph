@@ -34,9 +34,10 @@ The repository currently includes:
 - A responsive `/skill-gap` analyzer with weighted readiness and ranked next skills.
 - An interactive `/explorer` powered by Cytoscape.js with filters and node details.
 - A bounded graph-neighborhood API capped at 150 nodes and 300 relationships.
+- A responsive product landing page that connects the three primary workflows.
 - Automated tests for data invariants, service calculations, graph limits, and UI states.
 
-The final landing-page experience and submission documentation are the next implementation milestones.
+Submission documentation, final responsive QA, and deployment are the next implementation milestones.
 
 ## API
 
