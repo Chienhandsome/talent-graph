@@ -58,11 +58,11 @@ public class GraphRepository {
                     "depth", depth,
                     "relationshipTypes", GRAPH_RELATIONSHIP_TYPES,
                     "nodeLabels", GRAPH_NODE_LABELS
-            )).list();
+            ));
 
             return mapGraphRecords(records);
         } catch (Exception e) {
-            throw new DatabaseUnavailableException("Failed to find subgraph", e);
+            throw new DatabaseUnavailableException(e);
         }
     }
 

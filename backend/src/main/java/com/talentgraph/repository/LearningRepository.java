@@ -52,11 +52,11 @@ public class LearningRepository {
                 """;
 
             CompletableFuture<List<Record>> resourceFuture = CompletableFuture.supplyAsync(() ->
-                cypherExecutor.executeQuery(resourceCypher, Map.of("skillIds", uniqueSkillIds)).list()
+                cypherExecutor.executeQuery(resourceCypher, Map.of("skillIds", uniqueSkillIds))
             );
 
             CompletableFuture<List<Record>> projectFuture = CompletableFuture.supplyAsync(() ->
-                cypherExecutor.executeQuery(projectCypher, Map.of("skillIds", uniqueSkillIds)).list()
+                cypherExecutor.executeQuery(projectCypher, Map.of("skillIds", uniqueSkillIds))
             );
 
             CompletableFuture.allOf(resourceFuture, projectFuture).join();
@@ -98,7 +98,7 @@ public class LearningRepository {
 
             return new ArrayList<>(optionsMap.values());
         } catch (Exception e) {
-            throw new DatabaseUnavailableException("Failed to find learning options for skills", e);
+            throw new DatabaseUnavailableException(e);
         }
     }
 }

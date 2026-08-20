@@ -1,6 +1,9 @@
 package com.talentgraph.config;
 
-import org.neo4j.driver.*;
+import org.neo4j.driver.Driver;
+import org.neo4j.driver.ExecutableQuery;
+import org.neo4j.driver.QueryConfig;
+import org.neo4j.driver.Record;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -18,15 +21,14 @@ public class CypherExecutor {
         this.database = database;
     }
 
-    public List<Record> execute(String cypher, Map<String, Object> params) {
-        ExecutableQuery<EagerResult> query = driver.executableQuery(cypher)
+    public List<Record> executeQuery(String cypher, Map<String, Object> params) {
+        ExecutableQuery query = driver.executableQuery(cypher)
                 .withParameters(params);
 
         if (database != null && !database.trim().isEmpty()) {
             query = query.withConfig(QueryConfig.builder().withDatabase(database.trim()).build());
         }
 
-        EagerResult result = query.execute();
-        return result.records();
+        return query.execute().records();
     }
 }

@@ -7,7 +7,6 @@ import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -23,7 +22,7 @@ public class SkillGapController {
     public ResponseEntity<Map<String, Object>> analyzeSkillGap(@Valid @RequestBody SkillGapRequestDto request) {
         SkillGapResult result = skillGapService.analyze(
             request.targetRoleId(),
-            request.skillIds() != null ? request.skillIds() : List.of()
+            request.resolvedSkillIds()
         );
 
         return ResponseEntity.ok(Map.of(

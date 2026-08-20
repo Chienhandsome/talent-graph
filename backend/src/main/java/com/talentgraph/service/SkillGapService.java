@@ -57,7 +57,7 @@ public class SkillGapService {
         int readinessScore = totalWeight == 0 ? 0 : Math.round(((float) heldWeight / totalWeight) * 100);
 
         List<SkillWithLearning> missingEssentialSkills = missingSkills.stream()
-                .filter(SkillRequirement::essential)
+                .filter(SkillWithLearning::essential)
                 .collect(Collectors.toList());
 
         List<SkillWithLearning> missingOptionalSkills = missingSkills.stream()

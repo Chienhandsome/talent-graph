@@ -37,9 +37,9 @@ public class RoleRepository {
                 LIMIT 50
                 """;
             return cypherExecutor.executeQuery(cypher, Map.of("query", query.toLowerCase()))
-                .list(this::mapRoleRecord);
+                .stream().map(this::mapRoleRecord).toList();
         } catch (Exception e) {
-            throw new DatabaseUnavailableException("Failed to search roles", e);
+            throw new DatabaseUnavailableException(e);
         }
     }
 
@@ -58,7 +58,7 @@ public class RoleRepository {
             return cypherExecutor.executeQuery(cypher, Map.of("id", id))
                 .stream().map(this::mapRoleRecord).findFirst().orElse(null);
         } catch (Exception e) {
-            throw new DatabaseUnavailableException("Failed to find role by id", e);
+            throw new DatabaseUnavailableException(e);
         }
     }
 
@@ -82,9 +82,9 @@ public class RoleRepository {
                 ORDER BY role.id ASC, requirement.importance DESC, skill.name ASC
                 """;
             return cypherExecutor.executeQuery(cypher, Map.of("roleIds", roleIds))
-                .list(this::mapRequirementRecord);
+                .stream().map(this::mapRequirementRecord).toList();
         } catch (Exception e) {
-            throw new DatabaseUnavailableException("Failed to find requirements", e);
+            throw new DatabaseUnavailableException(e);
         }
     }
 

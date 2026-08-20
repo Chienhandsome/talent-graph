@@ -3,7 +3,9 @@ package com.talentgraph.dto;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
 import java.util.List;
 
 public record CareerPathRequestDto(
@@ -15,7 +17,8 @@ public record CareerPathRequestDto(
     @Pattern(regexp = "^[a-z0-9]+(?:-[a-z0-9]+)*$")
     String targetRoleId,
 
-    List<String> skillIds,
+    @Size(max = 70)
+    List<@NotNull @Pattern(regexp = "^[a-z0-9]+(?:-[a-z0-9]+)*$") String> skillIds,
 
     @Min(1)
     @Max(4)
@@ -31,7 +34,7 @@ public record CareerPathRequestDto(
     }
 
     public List<String> resolvedSkillIds() {
-        return skillIds != null ? skillIds : List.of();
+        return skillIds.stream().distinct().toList();
     }
 
     public int resolvedMaxHops() {

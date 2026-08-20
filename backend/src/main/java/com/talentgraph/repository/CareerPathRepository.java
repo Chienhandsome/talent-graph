@@ -40,9 +40,9 @@ public class CareerPathRepository {
                     "currentRoleId", currentRoleId,
                     "targetRoleId", targetRoleId,
                     "maxHops", maxHops
-                )).list(this::mapCareerPathRecord);
+                )).stream().map(this::mapCareerPathRecord).toList();
         } catch (Exception e) {
-            throw new DatabaseUnavailableException("Failed to find candidates", e);
+            throw new DatabaseUnavailableException(e);
         }
     }
 

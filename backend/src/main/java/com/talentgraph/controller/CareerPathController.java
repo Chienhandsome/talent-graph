@@ -29,15 +29,15 @@ public class CareerPathController {
         List<CareerPathResult> paths = careerPathService.findPaths(
             request.currentRoleId(),
             request.targetRoleId(),
-            request.skillIds() != null ? request.skillIds() : List.of(),
-            request.maxHops() != null ? request.maxHops() : 4
+            request.resolvedSkillIds(),
+            request.resolvedMaxHops()
         );
 
         return ResponseEntity.ok(Map.of(
             "data", Map.of("paths", paths),
             "meta", Map.of(
                 "count", paths.size(),
-                "maxHops", request.maxHops() != null ? request.maxHops() : 4
+                "maxHops", request.resolvedMaxHops()
             )
         ));
     }
