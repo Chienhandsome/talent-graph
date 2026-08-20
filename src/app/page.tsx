@@ -56,19 +56,19 @@ const tools = [
 
 const accentClasses = {
   emerald: {
-    shell: "border-emerald-200/80 bg-emerald-50/60 hover:border-emerald-300",
+    shell: "border-emerald-200/80 bg-white hover:border-emerald-300",
     icon: "bg-emerald-100 text-emerald-800",
     eyebrow: "text-emerald-800",
     link: "text-emerald-800",
   },
   indigo: {
-    shell: "border-indigo-200/80 bg-indigo-50/60 hover:border-indigo-300",
+    shell: "border-indigo-200/80 bg-white hover:border-indigo-300",
     icon: "bg-indigo-100 text-indigo-800",
     eyebrow: "text-indigo-800",
     link: "text-indigo-800",
   },
   cyan: {
-    shell: "border-cyan-200/80 bg-cyan-50/60 hover:border-cyan-300",
+    shell: "border-cyan-200/80 bg-white hover:border-cyan-300",
     icon: "bg-cyan-100 text-cyan-900",
     eyebrow: "text-cyan-900",
     link: "text-cyan-900",
@@ -82,7 +82,7 @@ function GraphPreview() {
         className="absolute -inset-5 -z-10 rounded-[2.5rem] bg-gradient-to-br from-emerald-200/40 via-cyan-100/30 to-indigo-200/40 blur-2xl"
         aria-hidden="true"
       />
-      <div className="overflow-hidden rounded-[1.75rem] border border-slate-200 bg-white shadow-[0_30px_90px_-45px_rgba(15,23,42,.5)]">
+      <div className="overflow-hidden rounded-[1.75rem] border border-slate-200 bg-white shadow-xl">
         <div className="flex items-center justify-between border-b border-slate-100 px-5 py-4">
           <div className="flex items-center gap-2 text-sm font-semibold text-slate-800">
             <Network className="size-4 text-cyan-700" aria-hidden="true" />
@@ -285,7 +285,7 @@ export default function Home() {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link
                 href="/career-path"
-                className="inline-flex h-12 items-center justify-center gap-2 rounded-xl bg-emerald-700 px-5 text-sm font-semibold text-white shadow-[0_12px_30px_-14px_rgba(4,120,87,.8)] transition-all hover:-translate-y-0.5 hover:bg-emerald-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 focus-visible:ring-offset-2"
+                className="inline-flex h-12 items-center justify-center gap-2 rounded-xl bg-emerald-700 px-5 text-sm font-semibold text-white shadow-md transition-all hover:-translate-y-0.5 hover:bg-emerald-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 focus-visible:ring-offset-2"
               >
                 Explore career paths
                 <ArrowRight className="size-4" aria-hidden="true" />
@@ -341,7 +341,7 @@ export default function Home() {
                 <Link
                   key={tool.href}
                   href={tool.href}
-                  className={`group flex min-h-80 flex-col rounded-[1.5rem] border p-6 shadow-[0_18px_50px_-38px_rgba(15,23,42,.45)] transition-all hover:-translate-y-1 hover:shadow-[0_24px_60px_-38px_rgba(15,23,42,.55)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-4 ${colors.shell}`}
+                  className={`group flex min-h-80 flex-col rounded-[1.5rem] border p-6 shadow-md transition-all hover:-translate-y-1 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-4 ${colors.shell}`}
                 >
                   <div className={`flex size-12 items-center justify-center rounded-2xl ${colors.icon}`}>
                     <Icon className="size-5" aria-hidden="true" />
@@ -421,7 +421,7 @@ export default function Home() {
                 return (
                   <li
                     key={step.number}
-                    className="grid gap-4 rounded-2xl border border-slate-200 bg-[#fafbf9] p-5 sm:grid-cols-[48px_1fr_auto] sm:items-center sm:p-6"
+                    className="grid gap-4 rounded-2xl border border-slate-200 bg-white p-5 sm:grid-cols-[48px_1fr_auto] sm:items-center sm:p-6"
                   >
                     <div className="text-sm font-semibold text-slate-400">
                       {step.number}
@@ -445,7 +445,7 @@ export default function Home() {
 
       <section id="knowledge-graph" className="scroll-mt-20 py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="overflow-hidden rounded-[2rem] bg-slate-950 text-white shadow-[0_28px_80px_-42px_rgba(15,23,42,.8)]">
+          <div className="overflow-hidden rounded-[2rem] bg-slate-950 text-white shadow-2xl">
             <div className="grid gap-10 p-7 sm:p-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:p-14">
               <div>
                 <div className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.18em] text-cyan-300 uppercase">
