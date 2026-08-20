@@ -26,3 +26,14 @@ export const careerPathRequestSchema = z
     ...value,
     skillIds: [...new Set(value.skillIds)],
   }));
+
+export const skillGapRequestSchema = z
+  .object({
+    targetRoleId: stableIdSchema,
+    skillIds: z.array(stableIdSchema).max(70).default([]),
+  })
+  .strict()
+  .transform((value) => ({
+    ...value,
+    skillIds: [...new Set(value.skillIds)],
+  }));
