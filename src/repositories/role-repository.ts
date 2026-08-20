@@ -29,7 +29,7 @@ async function search(query: string): Promise<RoleSummary[]> {
               role.seniority AS seniority,
               role.summary AS summary
        ORDER BY role.name ASC
-       LIMIT 20`,
+       LIMIT 50`,
       { query: query.toLowerCase() },
       queryConfig,
     );

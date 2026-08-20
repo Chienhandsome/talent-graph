@@ -28,9 +28,12 @@ The repository currently includes:
 - Validated JSON seed fixtures with stable IDs.
 - Idempotent, parameterized CognoDB seed queries.
 - A guarded database clear script.
+- A responsive `/career-path` explorer with role, skill, and path controls.
+- Ranked transition cards with skill-fit scores and expandable learning plans.
+- Loading, empty, API error, and retry states for the primary demo flow.
 - Automated tests for data invariants and primary demo path coverage.
 
-The career-path, skill-gap, and graph-explorer user interfaces are the next implementation milestones.
+The skill-gap and graph-explorer user interfaces are the next implementation milestones.
 
 ## API
 
