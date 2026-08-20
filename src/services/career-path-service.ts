@@ -1,5 +1,6 @@
 import { NotFoundError } from "@/lib/errors";
 import type { CareerPathRepository } from "@/repositories/career-path-repository";
+import type { LearningRepository } from "@/repositories/learning-repository";
 import type { RoleRepository } from "@/repositories/role-repository";
 import type {
   CandidateCareerPath,
@@ -110,6 +111,7 @@ export class CareerPathService {
   constructor(
     private readonly roleRepository: RoleRepository,
     private readonly careerPathRepository: CareerPathRepository,
+    private readonly learningRepository: LearningRepository,
   ) {}
 
   async findPaths(request: CareerPathRequest): Promise<CareerPathResult[]> {
@@ -171,7 +173,7 @@ export class CareerPathService {
     }
 
     const learningOptions = groupLearningOptions(
-      await this.careerPathRepository.findLearningOptions([
+      await this.learningRepository.findOptionsForSkills([
         ...missingSkillIds,
       ]),
     );

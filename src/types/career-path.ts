@@ -1,4 +1,11 @@
 import type { RoleSummary, SkillRequirement } from "./role";
+import type { SkillWithLearning } from "./learning";
+
+export type {
+  LearningResourceSummary,
+  ProjectSummary,
+  SkillLearningOptions,
+} from "./learning";
 
 export interface TransitionSummary {
   difficulty: "easy" | "moderate" | "hard";
@@ -11,32 +18,7 @@ export interface CandidateCareerPath {
   hops: number;
 }
 
-export interface LearningResourceSummary {
-  id: string;
-  title: string;
-  type: "course" | "documentation" | "tutorial" | "book";
-  provider: string;
-  url?: string;
-  description: string;
-}
-
-export interface ProjectSummary {
-  id: string;
-  title: string;
-  difficulty: "beginner" | "intermediate" | "advanced";
-  description: string;
-}
-
-export interface SkillLearningOptions {
-  skillId: string;
-  resources: LearningResourceSummary[];
-  projects: ProjectSummary[];
-}
-
-export interface MissingSkill extends SkillRequirement {
-  resources: LearningResourceSummary[];
-  projects: ProjectSummary[];
-}
+export type MissingSkill = SkillWithLearning;
 
 export interface CareerPathStep {
   fromRole: RoleSummary;
