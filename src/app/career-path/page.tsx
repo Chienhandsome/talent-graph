@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowLeft, GitFork, Layers3, Route, Sparkles } from "lucide-react";
+import {
+  ArrowLeft,
+  GitFork,
+  Layers3,
+  Network,
+  Route,
+  Sparkles,
+} from "lucide-react";
 
 import { CareerPathExplorer } from "@/features/career-path/components/career-path-explorer";
 
@@ -32,6 +39,13 @@ export default function CareerPathPage() {
             >
               <Layers3 className="size-4" aria-hidden="true" />
               <span className="hidden sm:inline">Skill gap</span>
+            </Link>
+            <Link
+              href="/explorer"
+              className="inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600"
+            >
+              <Network className="size-4" aria-hidden="true" />
+              <span className="hidden md:inline">Explorer</span>
             </Link>
             <Link
               href="/"

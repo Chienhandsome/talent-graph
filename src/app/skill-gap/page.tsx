@@ -3,6 +3,7 @@ import Link from "next/link";
 import {
   ArrowLeft,
   GitFork,
+  Network,
   Route,
   Sparkles,
   Target,
@@ -38,6 +39,13 @@ export default function SkillGapPage() {
             >
               <Route className="size-4" aria-hidden="true" />
               <span className="hidden sm:inline">Career paths</span>
+            </Link>
+            <Link
+              href="/explorer"
+              className="inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600"
+            >
+              <Network className="size-4" aria-hidden="true" />
+              <span className="hidden md:inline">Explorer</span>
             </Link>
             <Link
               href="/"
