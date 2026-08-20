@@ -32,6 +32,42 @@ The repository currently includes:
 
 The career-path, skill-gap, and graph-explorer user interfaces are the next implementation milestones.
 
+## API
+
+The current server API includes:
+
+```text
+GET  /api/health
+GET  /api/roles?q=<query>
+GET  /api/roles/:id
+POST /api/career-path
+```
+
+Example career-path request:
+
+```json
+{
+  "currentRoleId": "frontend-developer",
+  "targetRoleId": "ai-engineer",
+  "skillIds": ["javascript", "typescript", "react"],
+  "maxHops": 4
+}
+```
+
+The path repository uses a fixed, bounded variable-length traversal. `maxHops` is validated to `1-4` and passed as a query parameter:
+
+```cypher
+MATCH path = (current:Role {id: $currentRoleId})
+              -[:CAN_TRANSITION_TO*1..4]->
+              (target:Role {id: $targetRoleId})
+WHERE length(path) <= $maxHops
+RETURN nodes(path), relationships(path), length(path)
+ORDER BY length(path)
+LIMIT 25
+```
+
+The service removes cyclic and duplicate candidates, calculates shared and missing skills at each transition, attaches learning resources and projects, and returns at most five paths ordered by hop count and suitability.
+
 ## Dataset
 
 | Entity | Count |
