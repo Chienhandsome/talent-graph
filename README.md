@@ -32,9 +32,11 @@ The repository currently includes:
 - Ranked transition cards with skill-fit scores and expandable learning plans.
 - Loading, empty, API error, and retry states for the primary demo flow.
 - A responsive `/skill-gap` analyzer with weighted readiness and ranked next skills.
-- Automated tests for data invariants and primary demo path coverage.
+- An interactive `/explorer` powered by Cytoscape.js with filters and node details.
+- A bounded graph-neighborhood API capped at 150 nodes and 300 relationships.
+- Automated tests for data invariants, service calculations, graph limits, and UI states.
 
-The graph explorer and final landing-page experience are the next implementation milestones.
+The final landing-page experience and submission documentation are the next implementation milestones.
 
 ## API
 
@@ -46,6 +48,7 @@ GET  /api/roles?q=<query>
 GET  /api/roles/:id
 POST /api/career-path
 POST /api/skill-gap
+GET  /api/graph?roleId=<id>&depth=<1|2>
 ```
 
 Example career-path request:
@@ -86,6 +89,24 @@ The skill-gap service compares the selected skills with the target role's
 requirements, calculates an importance-weighted readiness score, separates
 essential and optional gaps, and returns up to five next skills with mapped
 learning resources and projects.
+
+The graph endpoint starts from a role and follows only the curated relationship
+types for one or two hops. The traversal range is fixed in Cypher, while the
+validated depth is passed as a parameter:
+
+```cypher
+MATCH path = (root:Role {id: $roleId})-[*1..2]-(connected)
+WHERE length(path) <= $depth
+  AND all(relationship IN relationships(path)
+    WHERE type(relationship) IN $relationshipTypes)
+RETURN nodes(path), relationships(path), length(path)
+ORDER BY length(path)
+LIMIT 400
+```
+
+The service deduplicates nodes and relationships, preserves relationship
+direction, keeps the selected root role, and caps the JSON response before it
+reaches Cytoscape.js.
 
 ## Dataset
 
