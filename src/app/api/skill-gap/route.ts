@@ -2,18 +2,16 @@ import {
   createApiErrorResponse,
   InvalidRequestError,
 } from "@/lib/errors";
-import { careerPathRequestSchema } from "@/lib/validation/api";
-import { careerPathRepository } from "@/repositories/career-path-repository";
+import { skillGapRequestSchema } from "@/lib/validation/api";
 import { learningRepository } from "@/repositories/learning-repository";
 import { roleRepository } from "@/repositories/role-repository";
-import { CareerPathService } from "@/services/career-path-service";
+import { SkillGapService } from "@/services/skill-gap-service";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
-const careerPathService = new CareerPathService(
+const skillGapService = new SkillGapService(
   roleRepository,
-  careerPathRepository,
   learningRepository,
 );
 
@@ -26,14 +24,14 @@ export async function POST(request: Request): Promise<Response> {
       throw new InvalidRequestError("Request body must be valid JSON.");
     }
 
-    const input = careerPathRequestSchema.parse(body);
-    const paths = await careerPathService.findPaths(input);
+    const input = skillGapRequestSchema.parse(body);
+    const result = await skillGapService.analyze(input);
 
     return Response.json({
-      data: { paths },
+      data: { result },
       meta: {
-        count: paths.length,
-        maxHops: input.maxHops,
+        totalRequiredSkills: result.totalRequiredSkills,
+        recommendedSkills: result.recommendedNextSkills.length,
       },
     });
   } catch (error) {
