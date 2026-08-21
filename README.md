@@ -39,6 +39,33 @@ The repository currently includes:
 
 Submission documentation, final responsive QA, and deployment are the next implementation milestones.
 
+## Screenshots
+
+### Home
+
+![TalentGraph home page](docs/images/home.png)
+
+### Career path explorer
+
+Find and compare multi-hop career paths with transferable skills, missing
+skills, learning resources, and practice projects.
+
+![Career path results from Frontend Developer to AI Engineer](docs/images/career-path-results.png)
+
+### Skill gap analysis
+
+Compare current skills with a target role using an importance-weighted
+readiness score.
+
+![Skill gap analysis for the AI Engineer role](docs/images/skill-gap-analysis.png)
+
+### Interactive graph explorer
+
+Explore roles, skills, learning resources, projects, and their relationships
+through an interactive two-hop graph.
+
+![TalentGraph interactive graph explorer](docs/images/graph-explorer.png)
+
 ## API
 
 The current server API includes:
