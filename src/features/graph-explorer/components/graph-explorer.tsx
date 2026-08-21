@@ -3,12 +3,10 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   Focus,
-  GitFork,
   Maximize2,
   Minus,
   Minimize2,
   Plus,
-  RefreshCw,
   RotateCcw,
   TriangleAlert,
 } from "lucide-react";
@@ -407,12 +405,6 @@ export function GraphExplorer() {
                   canvasRef.current?.focusNode(nodeId);
                 }}
               />
-
-              <div className="flex items-center gap-2 rounded-xl border border-dashed border-slate-300 bg-white/60 px-4 py-3 text-sm text-slate-500">
-                <GitFork className="size-4 shrink-0 text-cyan-700" aria-hidden="true" />
-                The server returns only bounded, curated relationship types.
-                <RefreshCw className="ml-auto size-4 shrink-0 text-slate-400" aria-hidden="true" />
-              </div>
             </>
           ) : null}
           {!isLoading && !graphError && !hasExplored ? <GraphInitialState /> : null}

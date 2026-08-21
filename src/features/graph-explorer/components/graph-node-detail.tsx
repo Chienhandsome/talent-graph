@@ -3,6 +3,7 @@
 import {
   BookOpen,
   BriefcaseBusiness,
+  ChevronRight,
   ExternalLink,
   FolderKanban,
   GitFork,
@@ -79,63 +80,73 @@ export function GraphNodeDetail({
     : [];
 
   return (
-    <Card className="border-0 bg-white ring-slate-200">
-      <CardHeader className="border-b border-slate-100 pb-4">
+    <Card className="border-0 bg-white shadow-[0_18px_55px_-35px_rgba(15,23,42,.3)] ring-slate-200">
+      <CardHeader className="border-b border-slate-200 bg-slate-50/60 pb-4">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="flex items-center gap-2 text-xs font-semibold tracking-wide text-cyan-800 uppercase">
               <Network className="size-4" aria-hidden="true" />
               Node inspector
             </p>
-            <CardTitle className="mt-2 text-lg">Inspect graph details</CardTitle>
+            <CardTitle className="mt-2 text-xl text-slate-950">
+              Inspect graph details
+            </CardTitle>
+            <p className="mt-1 text-sm text-slate-500">
+              Review a node and jump between its direct connections.
+            </p>
           </div>
-          <Select
-            items={nodeItems}
-            value={selectedNode?.id ?? null}
-            onValueChange={(value) => {
-              if (value) {
-                onSelectNode(value);
-              }
-            }}
-          >
-            <label htmlFor="graph-node-inspector" className="sr-only">
-              Inspect a visible graph node
-            </label>
-            <SelectTrigger
-              id="graph-node-inspector"
-              className="h-10 w-full max-w-sm border-slate-200 bg-white px-3 sm:w-80"
+          <div className="w-full sm:w-80">
+            <label
+              htmlFor="graph-node-inspector"
+              className="text-xs font-medium text-slate-600"
             >
-              <SelectValue placeholder="Choose a visible node" />
-            </SelectTrigger>
-            <SelectContent align="end" alignItemWithTrigger={false} className="max-h-72">
-              {visibleNodes.map((node) => (
-                <SelectItem key={node.id} value={node.id}>
-                  <span className="flex min-w-0 flex-col py-0.5">
-                    <span className="truncate font-medium">{node.label}</span>
-                    <span className="text-xs text-muted-foreground">
-                      {nodeTypeLabels[node.type]}
+              Selected node
+            </label>
+            <Select
+              items={nodeItems}
+              value={selectedNode?.id ?? null}
+              onValueChange={(value) => {
+                if (value) {
+                  onSelectNode(value);
+                }
+              }}
+            >
+              <SelectTrigger
+                id="graph-node-inspector"
+                className="mt-1.5 h-10 w-full border-slate-300 bg-white px-3 shadow-xs"
+              >
+                <SelectValue placeholder="Choose a visible node" />
+              </SelectTrigger>
+              <SelectContent align="end" alignItemWithTrigger={false} className="max-h-72">
+                {visibleNodes.map((node) => (
+                  <SelectItem key={node.id} value={node.id}>
+                    <span className="flex min-w-0 flex-col py-0.5">
+                      <span className="truncate font-medium">{node.label}</span>
+                      <span className="text-xs text-muted-foreground">
+                        {nodeTypeLabels[node.type]}
+                      </span>
                     </span>
-                  </span>
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
         </div>
       </CardHeader>
 
       <CardContent>
         {selectedNode ? (
-          <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(280px,.8fr)]">
-            <div>
+          <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(320px,.8fr)]">
+            <div className="rounded-xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-4 sm:p-5">
               <div className="flex flex-wrap items-center gap-2">
-                <span className="flex size-9 items-center justify-center rounded-xl bg-slate-950 text-white">
+                <span className="flex size-11 items-center justify-center rounded-xl bg-slate-950 text-white shadow-sm">
                   <NodeIcon type={selectedNode.type} />
                 </span>
                 <div>
-                  <h3 className="font-semibold text-slate-950">
+                  <h3 className="text-base font-semibold text-slate-950">
                     {selectedNode.label}
                   </h3>
-                  <p className="text-xs text-slate-500 capitalize">
+                  <p className="mt-0.5 text-sm text-slate-500 capitalize">
                     {selectedNode.subtitle}
                   </p>
                 </div>
@@ -146,7 +157,7 @@ export function GraphNodeDetail({
                   {nodeTypeLabels[selectedNode.type]}
                 </Badge>
               </div>
-              <p className="mt-4 text-sm leading-6 text-slate-600">
+              <p className="mt-5 text-sm leading-6 text-slate-700">
                 {selectedNode.description}
               </p>
               {selectedNode.url ? (
@@ -162,23 +173,39 @@ export function GraphNodeDetail({
               ) : null}
             </div>
 
-            <div className="rounded-xl border border-slate-200 bg-slate-50/70 p-4">
-              <p className="text-xs font-semibold tracking-wide text-slate-500 uppercase">
-                Direct connections · {connections.length}
-              </p>
+            <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 sm:p-5">
+              <div className="flex items-center justify-between gap-3">
+                <p className="text-sm font-semibold text-slate-800">
+                  Direct connections
+                </p>
+                <Badge variant="outline" className="bg-white text-slate-700">
+                  {connections.length}
+                </Badge>
+              </div>
               {connections.length > 0 ? (
-                <ul className="mt-3 max-h-40 space-y-2 overflow-y-auto pr-1">
+                <ul className="mt-3 max-h-56 space-y-2 overflow-y-auto pr-1">
                   {connections.slice(0, 20).map(({ edge, node }) => (
-                    <li
-                      key={edge.id}
-                      className="flex items-center justify-between gap-3 text-xs"
-                    >
-                      <span className="truncate font-medium text-slate-700">
-                        {node?.label}
-                      </span>
-                      <span className="shrink-0 text-[10px] tracking-wide text-slate-400 uppercase">
-                        {edge.label}
-                      </span>
+                    <li key={edge.id}>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          if (node) {
+                            onSelectNode(node.id);
+                          }
+                        }}
+                        className="group flex min-h-11 w-full items-center gap-3 rounded-lg border border-slate-200 bg-white px-3 py-2 text-left transition-colors hover:border-cyan-300 hover:bg-cyan-50/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
+                      >
+                        <span className="min-w-0 flex-1 truncate text-sm font-medium text-slate-800">
+                          {node?.label}
+                        </span>
+                        <span className="shrink-0 rounded-full bg-slate-100 px-2 py-0.5 text-[10px] font-medium tracking-wide text-slate-500 uppercase group-hover:bg-white group-hover:text-cyan-800">
+                          {edge.label}
+                        </span>
+                        <ChevronRight
+                          className="size-3.5 shrink-0 text-slate-400 group-hover:text-cyan-700"
+                          aria-hidden="true"
+                        />
+                      </button>
                     </li>
                   ))}
                 </ul>
