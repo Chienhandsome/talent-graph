@@ -43,8 +43,17 @@ import {
 import type { RoleSummary } from "@/types/role";
 
 const depthOptions = [
-  { value: "1", label: "1 hop · focused" },
-  { value: "2", label: "2 hops · connected" },
+  {
+    value: "1",
+    label: "1 hop · focused",
+    description: "Shows only nodes directly connected to the root role.",
+  },
+  {
+    value: "2",
+    label: "2 hops · connected",
+    description:
+      "Also shows connections from nearby nodes for a broader view.",
+  },
 ];
 
 const nodeTypeLabels: Record<GraphNodeType, string> = {
@@ -107,6 +116,9 @@ export function GraphControls({
   const roleItems = roles.map((role) => ({ value: role.id, label: role.name }));
   const visibleNodes = new Set(visibleNodeTypes);
   const visibleRelationships = new Set(visibleRelationshipTypes);
+  const selectedDepthOption = depthOptions.find(
+    (option) => option.value === String(depth),
+  );
 
   return (
     <Card className="border-0 bg-white shadow-[0_18px_55px_-35px_rgba(15,23,42,.45)] ring-slate-200 xl:sticky xl:top-6">
@@ -192,6 +204,7 @@ export function GraphControls({
             </label>
             <SelectTrigger
               id="graph-depth"
+              aria-describedby="graph-depth-description"
               className="h-11 w-full border-slate-200 bg-white px-3 hover:bg-slate-50"
             >
               <SelectValue />
@@ -199,10 +212,21 @@ export function GraphControls({
             <SelectContent align="start" alignItemWithTrigger={false}>
               {depthOptions.map((option) => (
                 <SelectItem key={option.value} value={option.value}>
-                  {option.label}
+                  <span className="flex min-w-0 flex-col py-0.5">
+                    <span className="font-medium">{option.label}</span>
+                    <span className="max-w-72 whitespace-normal text-xs leading-4 text-muted-foreground">
+                      {option.description}
+                    </span>
+                  </span>
                 </SelectItem>
               ))}
             </SelectContent>
+            <p
+              id="graph-depth-description"
+              className="mt-2 text-xs leading-5 text-slate-500"
+            >
+              {selectedDepthOption?.description}
+            </p>
           </Select>
 
           <Button
