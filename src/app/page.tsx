@@ -213,52 +213,6 @@ function GraphPreview() {
 export default function Home() {
   return (
     <main className="min-h-screen overflow-hidden bg-[#f7f8f5] text-slate-950">
-      <header className="relative z-20 border-b border-slate-200/80 bg-white/85 backdrop-blur-xl">
-        <div className="mx-auto flex min-h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 font-semibold tracking-tight outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 focus-visible:ring-offset-4"
-          >
-            <span className="flex size-9 items-center justify-center rounded-xl bg-slate-950 text-white shadow-sm">
-              <GitFork className="size-4" aria-hidden="true" />
-            </span>
-            <span>TalentGraph</span>
-          </Link>
-
-          <nav
-            className="hidden items-center gap-1 md:flex"
-            aria-label="Landing page navigation"
-          >
-            <a
-              href="#tools"
-              className="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600"
-            >
-              Tools
-            </a>
-            <a
-              href="#how-it-works"
-              className="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600"
-            >
-              How it works
-            </a>
-            <a
-              href="#knowledge-graph"
-              className="rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600"
-            >
-              The graph
-            </a>
-          </nav>
-
-          <Link
-            href="/career-path"
-            className="inline-flex h-10 items-center justify-center gap-2 rounded-xl bg-slate-950 px-4 text-sm font-semibold text-white shadow-sm transition-transform hover:-translate-y-0.5 hover:bg-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 focus-visible:ring-offset-2"
-          >
-            Start planning
-            <ArrowRight className="size-4" aria-hidden="true" />
-          </Link>
-        </div>
-      </header>
-
       <section className="relative border-b border-slate-200/80 bg-white">
         <div
           className="pointer-events-none absolute inset-0"

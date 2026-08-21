@@ -1,13 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import {
-  ArrowLeft,
-  GitFork,
-  Network,
-  Route,
-  Sparkles,
-  Target,
-} from "lucide-react";
+import { Sparkles, Target } from "lucide-react";
 
 import { SkillGapExplorer } from "@/features/skill-gap/components/skill-gap-explorer";
 
@@ -20,44 +12,6 @@ export const metadata: Metadata = {
 export default function SkillGapPage() {
   return (
     <main className="min-h-screen bg-[#f7f8f5] text-slate-950">
-      <header className="border-b border-slate-200/80 bg-white/85 backdrop-blur">
-        <div className="mx-auto flex min-h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 font-semibold tracking-tight outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:ring-offset-4"
-          >
-            <span className="flex size-9 items-center justify-center rounded-xl bg-slate-950 text-white shadow-sm">
-              <GitFork className="size-4" aria-hidden="true" />
-            </span>
-            <span>TalentGraph</span>
-          </Link>
-
-          <nav className="flex items-center gap-1" aria-label="Product navigation">
-            <Link
-              href="/career-path"
-              className="inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600"
-            >
-              <Route className="size-4" aria-hidden="true" />
-              <span className="hidden sm:inline">Career paths</span>
-            </Link>
-            <Link
-              href="/explorer"
-              className="inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600"
-            >
-              <Network className="size-4" aria-hidden="true" />
-              <span className="hidden md:inline">Explorer</span>
-            </Link>
-            <Link
-              href="/"
-              className="inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600"
-            >
-              <ArrowLeft className="size-4" aria-hidden="true" />
-              <span className="hidden sm:inline">Overview</span>
-            </Link>
-          </nav>
-        </div>
-      </header>
-
       <section className="relative overflow-hidden border-b border-slate-200/80 bg-white">
         <div
           className="pointer-events-none absolute inset-0 opacity-80"
