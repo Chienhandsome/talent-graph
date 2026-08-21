@@ -229,7 +229,7 @@ export function GraphExplorer() {
   }
 
   return (
-    <section className="mx-auto max-w-[1500px] px-4 py-8 sm:px-6 sm:py-10 lg:px-8 lg:py-12">
+    <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10 lg:px-8 lg:py-12">
       <div className="grid items-start gap-6 xl:grid-cols-[330px_minmax(0,1fr)] xl:gap-8">
         <GraphControls
           roles={roles}

@@ -21,7 +21,7 @@ export default function ExplorerPage() {
               "radial-gradient(circle at 14% 20%, rgba(8,145,178,.14), transparent 27%), radial-gradient(circle at 82% 22%, rgba(99,102,241,.10), transparent 26%)",
           }}
         />
-        <div className="relative mx-auto max-w-[1500px] px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
+        <div className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
           <div className="max-w-3xl">
             <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan-200 bg-cyan-50 px-3 py-1 text-xs font-semibold tracking-wide text-cyan-900 uppercase">
               <Sparkles className="size-3.5" aria-hidden="true" />
