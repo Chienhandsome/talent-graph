@@ -298,9 +298,38 @@ function PathCard({ path, index }: { path: CareerPathResult; index: number }) {
   );
 }
 
-export function CareerPathResults({ paths }: { paths: CareerPathResult[] }) {
+export function CareerPathResults({
+  paths,
+  coversAllTargetSkills,
+  targetRoleName,
+}: {
+  paths: CareerPathResult[];
+  coversAllTargetSkills: boolean;
+  targetRoleName: string;
+}) {
   return (
     <div className="space-y-5">
+      {coversAllTargetSkills ? (
+        <div
+          role="status"
+          className="flex items-start gap-3 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-emerald-950"
+        >
+          <CheckCircle2
+            className="mt-0.5 size-5 shrink-0 text-emerald-700"
+            aria-hidden="true"
+          />
+          <div>
+            <p className="font-semibold">
+              You already cover all mapped skills for {targetRoleName}.
+            </p>
+            <p className="mt-1 text-sm leading-6 text-emerald-800">
+              Any remaining gaps below are required only by intermediate roles
+              on a specific path.
+            </p>
+          </div>
+        </div>
+      ) : null}
+
       <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <p className="flex items-center gap-2 text-xs font-semibold tracking-wide text-emerald-700 uppercase">

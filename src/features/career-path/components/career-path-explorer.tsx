@@ -44,6 +44,9 @@ export function CareerPathExplorer() {
   const [currentRoleSkills, setCurrentRoleSkills] = useState<
     SkillRequirement[]
   >([]);
+  const [targetRoleSkills, setTargetRoleSkills] = useState<
+    SkillRequirement[]
+  >([]);
   const [selectedSkillIds, setSelectedSkillIds] = useState<string[]>([]);
   const [skillsLoading, setSkillsLoading] = useState(false);
   const [skillsError, setSkillsError] = useState<string | null>(null);
@@ -55,6 +58,7 @@ export function CareerPathExplorer() {
 
   const searchController = useRef<AbortController | null>(null);
   const lastRequest = useRef<CareerPathRequest | null>(null);
+  const loadedCurrentRoleId = useRef<string | null>(null);
   const resultsRegion = useRef<HTMLDivElement | null>(null);
 
   const clearResults = useCallback(() => {
@@ -128,7 +132,7 @@ export function CareerPathExplorer() {
   }, []);
 
   useEffect(() => {
-    if (!currentRoleId) {
+    if (!currentRoleId || !targetRoleId) {
       return;
     }
 
@@ -142,24 +146,40 @@ export function CareerPathExplorer() {
       setSkillsLoading(true);
       setSkillsError(null);
       setCurrentRoleSkills([]);
+      setTargetRoleSkills([]);
 
       try {
-        const role = await fetchRoleDetail(currentRoleId, controller.signal);
-        setCurrentRoleSkills(role.requiredSkills);
+        const [currentRole, targetRole] = await Promise.all([
+          fetchRoleDetail(currentRoleId, controller.signal),
+          fetchRoleDetail(targetRoleId, controller.signal),
+        ]);
+        setCurrentRoleSkills(currentRole.requiredSkills);
+        setTargetRoleSkills(targetRole.requiredSkills);
         const availableIds = new Set(
-          role.requiredSkills.map((skill) => skill.id),
+          [...currentRole.requiredSkills, ...targetRole.requiredSkills].map(
+            (skill) => skill.id,
+          ),
         );
         const suggestedSkills =
           currentRoleId === DEFAULT_CURRENT_ROLE
             ? DEFAULT_DEMO_SKILLS.filter((skillId) => availableIds.has(skillId))
-            : role.requiredSkills
+            : currentRole.requiredSkills
                 .filter((skill) => skill.essential)
                 .slice(0, 3)
                 .map((skill) => skill.id);
-        setSelectedSkillIds(suggestedSkills);
+        const currentRoleChanged =
+          loadedCurrentRoleId.current !== currentRoleId;
+        setSelectedSkillIds((selected) =>
+          currentRoleChanged
+            ? suggestedSkills
+            : selected.filter((skillId) => availableIds.has(skillId)),
+        );
+        loadedCurrentRoleId.current = currentRoleId;
       } catch (error) {
         if (!wasAborted(error)) {
           setSkillsError(errorMessage(error));
+          setCurrentRoleSkills([]);
+          setTargetRoleSkills([]);
           setSelectedSkillIds([]);
         }
       } finally {
@@ -172,7 +192,7 @@ export function CareerPathExplorer() {
     void loadSkills();
 
     return () => controller.abort();
-  }, [currentRoleId, skillsReloadToken]);
+  }, [currentRoleId, targetRoleId, skillsReloadToken]);
 
   useEffect(
     () => () => {
@@ -221,6 +241,13 @@ export function CareerPathExplorer() {
     });
   }
 
+  const selectedSkills = new Set(selectedSkillIds);
+  const coversAllTargetSkills =
+    targetRoleSkills.length > 0 &&
+    targetRoleSkills.every((skill) => selectedSkills.has(skill.id));
+  const targetRoleName =
+    roles.find((role) => role.id === targetRoleId)?.name ?? "the target role";
+
   return (
     <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10 lg:px-8 lg:py-12">
       <div className="grid items-start gap-6 lg:grid-cols-[380px_minmax(0,1fr)] lg:gap-8">
@@ -232,6 +259,7 @@ export function CareerPathExplorer() {
           targetRoleId={targetRoleId}
           maxHops={maxHops}
           currentRoleSkills={currentRoleSkills}
+          targetRoleSkills={targetRoleSkills}
           selectedSkillIds={selectedSkillIds}
           skillsLoading={skillsLoading}
           skillsError={skillsError}
@@ -241,11 +269,15 @@ export function CareerPathExplorer() {
             setSkillsLoading(Boolean(roleId));
             setSkillsError(null);
             setCurrentRoleSkills([]);
+            setTargetRoleSkills([]);
             setSelectedSkillIds([]);
             setCurrentRoleId(roleId);
           }}
           onTargetRoleChange={(roleId) => {
             clearResults();
+            setSkillsLoading(Boolean(currentRoleId && roleId));
+            setSkillsError(null);
+            setTargetRoleSkills([]);
             setTargetRoleId(roleId);
           }}
           onMaxHopsChange={(nextMaxHops) => {
@@ -265,6 +297,7 @@ export function CareerPathExplorer() {
             setSkillsLoading(Boolean(targetRoleId));
             setSkillsError(null);
             setCurrentRoleSkills([]);
+            setTargetRoleSkills([]);
             setSelectedSkillIds([]);
             setCurrentRoleId(targetRoleId);
             setTargetRoleId(currentRoleId);
@@ -295,7 +328,11 @@ export function CareerPathExplorer() {
             <CareerPathEmptyState />
           ) : null}
           {!isSubmitting && !searchError && paths.length > 0 ? (
-            <CareerPathResults paths={paths} />
+            <CareerPathResults
+              paths={paths}
+              coversAllTargetSkills={coversAllTargetSkills}
+              targetRoleName={targetRoleName}
+            />
           ) : null}
           {!isSubmitting && !searchError && !hasSearched ? (
             <CareerPathInitialState />

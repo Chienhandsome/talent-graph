@@ -49,9 +49,6 @@ export function buildCareerPathResult(
   learningOptions: Map<string, SkillLearningOptions>,
 ): CareerPathResult {
   const availableSkills = new Set(userSkillIds);
-  for (const requirement of requirementsByRole.get(candidate.roles[0].id) ?? []) {
-    availableSkills.add(requirement.id);
-  }
 
   let totalWeight = 0;
   let coveredWeight = 0;
@@ -158,10 +155,6 @@ export class CareerPathService {
     const missingSkillIds = new Set<string>();
     for (const candidate of uniqueCandidates) {
       const availableSkills = new Set(request.skillIds);
-      for (const requirement of
-        requirementsByRole.get(candidate.roles[0].id) ?? []) {
-        availableSkills.add(requirement.id);
-      }
       for (const role of candidate.roles.slice(1)) {
         for (const requirement of requirementsByRole.get(role.id) ?? []) {
           if (!availableSkills.has(requirement.id)) {

@@ -2,7 +2,6 @@
 
 import {
   ArrowLeftRight,
-  Check,
   LoaderCircle,
   RefreshCw,
   Search,
@@ -42,6 +41,7 @@ interface CareerPathFormProps {
   targetRoleId: string;
   maxHops: number;
   currentRoleSkills: SkillRequirement[];
+  targetRoleSkills: SkillRequirement[];
   selectedSkillIds: string[];
   skillsLoading: boolean;
   skillsError: string | null;
@@ -71,6 +71,7 @@ export function CareerPathForm({
   targetRoleId,
   maxHops,
   currentRoleSkills,
+  targetRoleSkills,
   selectedSkillIds,
   skillsLoading,
   skillsError,
@@ -89,6 +90,28 @@ export function CareerPathForm({
     label: role.name,
   }));
   const selectedSkills = new Set(selectedSkillIds);
+  const currentSkillIds = new Set(
+    currentRoleSkills.map((skill) => skill.id),
+  );
+  const targetSkillIds = new Set(targetRoleSkills.map((skill) => skill.id));
+  const skillGroups = [
+    {
+      label: "Shared by both roles",
+      skills: currentRoleSkills.filter((skill) => targetSkillIds.has(skill.id)),
+    },
+    {
+      label: "Current role only",
+      skills: currentRoleSkills.filter(
+        (skill) => !targetSkillIds.has(skill.id),
+      ),
+    },
+    {
+      label: "Target role only",
+      skills: targetRoleSkills.filter(
+        (skill) => !currentSkillIds.has(skill.id),
+      ),
+    },
+  ].filter((group) => group.skills.length > 0);
   const canSubmit =
     Boolean(currentRoleId && targetRoleId) &&
     currentRoleId !== targetRoleId &&
@@ -252,8 +275,8 @@ export function CareerPathForm({
                   Skills you already have
                 </legend>
                 <p className="mt-1 text-xs leading-5 text-slate-500">
-                  Based on your current role. Select everything you can use
-                  confidently.
+                  Based on both roles. Select everything you can use confidently;
+                  target-role skills are not selected automatically.
                 </p>
               </div>
               <span
@@ -284,30 +307,40 @@ export function CareerPathForm({
                     Retry
                   </Button>
                 </div>
-              ) : currentRoleSkills.length > 0 ? (
-                currentRoleSkills.map((skill) => {
-                  const selected = selectedSkills.has(skill.id);
-                  return (
-                    <button
-                      key={skill.id}
-                      type="button"
-                      aria-pressed={selected}
-                      onClick={() => onToggleSkill(skill.id)}
-                      className={cn(
-                        "inline-flex min-h-8 items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-medium transition-colors outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 focus-visible:ring-offset-2",
-                        selected
-                          ? "border-emerald-700 bg-emerald-700 text-white"
-                          : "border-slate-200 bg-white text-slate-600 hover:border-slate-300 hover:bg-slate-50 hover:text-slate-950",
-                      )}
-                    >
-                      {selected ? <Check className="size-3" aria-hidden="true" /> : null}
-                      {skill.name}
-                    </button>
-                  );
-                })
+              ) : skillGroups.length > 0 ? (
+                <div className="w-full space-y-3">
+                  {skillGroups.map((group) => (
+                    <div key={group.label}>
+                      <p className="text-[10px] font-semibold tracking-wide text-slate-400 uppercase">
+                        {group.label}
+                      </p>
+                      <div className="mt-2 flex flex-wrap gap-2">
+                        {group.skills.map((skill) => {
+                          const selected = selectedSkills.has(skill.id);
+                          return (
+                            <button
+                              key={skill.id}
+                              type="button"
+                              aria-pressed={selected}
+                              onClick={() => onToggleSkill(skill.id)}
+                              className={cn(
+                                "inline-flex min-h-8 items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-medium transition-colors outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 focus-visible:ring-offset-2",
+                                selected
+                                  ? "border-emerald-700 bg-emerald-700 text-white"
+                                  : "border-slate-200 bg-white text-slate-600 hover:border-slate-300 hover:bg-slate-50 hover:text-slate-950",
+                              )}
+                            >
+                              {skill.name}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  ))}
+                </div>
               ) : (
                 <p className="text-sm text-slate-500">
-                  Choose a current role to load its common skills.
+                  Choose current and target roles to load their skills.
                 </p>
               )}
             </div>
