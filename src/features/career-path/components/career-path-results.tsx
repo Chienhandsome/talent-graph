@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import {
   ArrowRight,
   BookOpen,
@@ -141,6 +144,7 @@ function MissingSkillCard({ skill }: { skill: MissingSkill }) {
 }
 
 function PathCard({ path, index }: { path: CareerPathResult; index: number }) {
+  const [isExpanded, setIsExpanded] = useState(false);
   const missingCount = path.steps.reduce(
     (total, step) =>
       total +
@@ -151,7 +155,9 @@ function PathCard({ path, index }: { path: CareerPathResult; index: number }) {
 
   return (
     <Card className="border-0 bg-white shadow-[0_16px_50px_-38px_rgba(15,23,42,.55)] ring-slate-200">
-      <CardHeader className="border-b border-slate-100 pb-5">
+      <CardHeader
+        className={cn("pb-5", isExpanded && "border-b border-slate-100")}
+      >
         <div className="flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between">
           <div>
             <div className="flex flex-wrap items-center gap-y-1 text-sm text-slate-600">
@@ -193,7 +199,9 @@ function PathCard({ path, index }: { path: CareerPathResult; index: number }) {
               }}
             >
               <span className="absolute inset-[5px] rounded-full bg-white" />
-              <span className="relative text-sm font-semibold">{path.suitabilityScore}%</span>
+              <span className="relative text-sm font-semibold">
+                {path.suitabilityScore}%
+              </span>
             </div>
             <div>
               <p className="text-xs font-semibold tracking-wide text-slate-500 uppercase">
@@ -216,9 +224,20 @@ function PathCard({ path, index }: { path: CareerPathResult; index: number }) {
             </div>
           ))}
         </div>
+        <button
+          type="button"
+          aria-expanded={isExpanded}
+          aria-controls={`${path.id}-details`}
+          aria-label={`${isExpanded ? "Collapse" : "Expand"} Path ${index + 1} details`}
+          onClick={() => setIsExpanded((expanded) => !expanded)}
+          className="mt-3 flex min-h-10 w-full items-center justify-center rounded-lg border border-slate-200 bg-white px-4 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50 hover:text-slate-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600"
+        >
+          {isExpanded ? "Hide path details" : "View path details"}
+        </button>
       </CardHeader>
 
-      <CardContent className="space-y-4">
+      {isExpanded ? (
+        <CardContent id={`${path.id}-details`} className="space-y-4">
         {path.steps.map((step, stepIndex) => {
           const missingSkills = [
             ...step.missingEssentialSkills,
@@ -302,7 +321,8 @@ function PathCard({ path, index }: { path: CareerPathResult; index: number }) {
             </section>
           );
         })}
-      </CardContent>
+        </CardContent>
+      ) : null}
     </Card>
   );
 }
