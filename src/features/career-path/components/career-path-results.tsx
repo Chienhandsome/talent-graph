@@ -154,16 +154,25 @@ function PathCard({ path, index }: { path: CareerPathResult; index: number }) {
       <CardHeader className="border-b border-slate-100 pb-5">
         <div className="flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between">
           <div>
-            <div className="flex flex-wrap items-center gap-2">
-              <Badge className="bg-slate-950 text-white">Path {index + 1}</Badge>
-              <Badge variant="outline">
-                {path.hops} {path.hops === 1 ? "transition" : "transitions"}
-              </Badge>
-              <Badge variant="outline">
-                {missingCount} {missingCount === 1 ? "skill" : "skills"} to build
-              </Badge>
+            <div className="flex flex-wrap items-center gap-y-1 text-sm text-slate-600">
+              <p className="pr-3 text-base font-semibold text-slate-950">
+                Path {index + 1}
+              </p>
+              <p className="border-l border-slate-200 px-3">
+                <span className="font-semibold text-slate-900">{path.hops}</span>{" "}
+                {path.hops === 1 ? "transition" : "transitions"}
+              </p>
+              <p
+                className={cn(
+                  "border-l border-slate-200 pl-3 font-medium",
+                  missingCount > 0 ? "text-amber-700" : "text-emerald-700",
+                )}
+              >
+                <span className="font-semibold">{missingCount}</span>{" "}
+                {missingCount === 1 ? "skill" : "skills"} to build
+              </p>
             </div>
-            <CardTitle className="mt-4 text-xl tracking-tight">
+            <CardTitle className="mt-3 text-xl tracking-tight">
               {path.roles[0].name} to {path.roles[path.roles.length - 1].name}
             </CardTitle>
             <CardDescription className="mt-1 leading-6">

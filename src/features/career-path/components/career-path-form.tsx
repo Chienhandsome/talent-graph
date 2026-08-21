@@ -90,15 +90,8 @@ export function CareerPathForm({
     label: role.name,
   }));
   const selectedSkills = new Set(selectedSkillIds);
-  const currentSkillIds = new Set(
-    currentRoleSkills.map((skill) => skill.id),
-  );
   const targetSkillIds = new Set(targetRoleSkills.map((skill) => skill.id));
   const skillGroups = [
-    {
-      label: "Shared by both roles",
-      skills: currentRoleSkills.filter((skill) => targetSkillIds.has(skill.id)),
-    },
     {
       label: "Current role only",
       skills: currentRoleSkills.filter(
@@ -106,10 +99,8 @@ export function CareerPathForm({
       ),
     },
     {
-      label: "Target role only",
-      skills: targetRoleSkills.filter(
-        (skill) => !currentSkillIds.has(skill.id),
-      ),
+      label: "Target role skills",
+      skills: targetRoleSkills,
     },
   ].filter((group) => group.skills.length > 0);
   const canSubmit =
@@ -276,7 +267,8 @@ export function CareerPathForm({
                 </legend>
                 <p className="mt-1 text-xs leading-5 text-slate-500">
                   Based on both roles. Select everything you can use confidently;
-                  target-role skills are not selected automatically.
+                  shared skills appear under the target role and are not selected
+                  automatically.
                 </p>
               </div>
               <span
