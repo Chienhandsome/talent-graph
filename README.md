@@ -143,8 +143,6 @@ reaches Cytoscape.js.
    - The generated password.
 8. Keep the instance running while reviewing or demonstrating the application.
 
-Store the credentials only in `.env.local` as described below.
-
 ## Local setup
 
 Requirements:
