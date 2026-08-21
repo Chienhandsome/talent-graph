@@ -19,7 +19,12 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import type { GraphData, GraphNode, GraphNodeType } from "@/types/graph";
+import type {
+  GraphData,
+  GraphEdge,
+  GraphNode,
+  GraphNodeType,
+} from "@/types/graph";
 
 const nodeTypeLabels: Record<GraphNodeType, string> = {
   role: "Role",
@@ -47,6 +52,70 @@ function NodeIcon({ type }: { type: GraphNodeType }) {
   return <Icon className="size-4" aria-hidden="true" />;
 }
 
+interface NodeConnection {
+  key: string;
+  node: GraphNode;
+  label: string;
+}
+
+function getNodeConnections(
+  graph: GraphData,
+  selectedNode: GraphNode | null,
+): NodeConnection[] {
+  if (!selectedNode) {
+    return [];
+  }
+
+  const groups = new Map<
+    string,
+    { key: string; node: GraphNode; edges: GraphEdge[] }
+  >();
+
+  for (const edge of graph.edges) {
+    if (edge.source !== selectedNode.id && edge.target !== selectedNode.id) {
+      continue;
+    }
+
+    const otherId =
+      edge.source === selectedNode.id ? edge.target : edge.source;
+    const node = graph.nodes.find((candidate) => candidate.id === otherId);
+    if (!node) {
+      continue;
+    }
+
+    const key = `${node.id}:${edge.type}`;
+    const existing = groups.get(key);
+    if (existing) {
+      existing.edges.push(edge);
+    } else {
+      groups.set(key, { key, node, edges: [edge] });
+    }
+  }
+
+  return [...groups.values()].map(({ key, node, edges }) => {
+    const firstEdge = edges[0];
+    let label = firstEdge.label;
+
+    if (firstEdge.type === "CAN_TRANSITION_TO") {
+      const hasOutgoing = edges.some(
+        (edge) => edge.source === selectedNode.id,
+      );
+      const hasIncoming = edges.some(
+        (edge) => edge.target === selectedNode.id,
+      );
+
+      label =
+        hasOutgoing && hasIncoming
+          ? "two-way transition"
+          : hasOutgoing
+            ? "can transition to"
+            : "can transition from";
+    }
+
+    return { key, node, label };
+  });
+}
+
 export function GraphNodeDetail({
   graph,
   visibleNodes,
@@ -62,22 +131,7 @@ export function GraphNodeDetail({
     value: node.id,
     label: `${node.label} · ${nodeTypeLabels[node.type]}`,
   }));
-  const connections = selectedNode
-    ? graph.edges
-        .filter(
-          (edge) =>
-            edge.source === selectedNode.id || edge.target === selectedNode.id,
-        )
-        .map((edge) => {
-          const otherId =
-            edge.source === selectedNode.id ? edge.target : edge.source;
-          return {
-            edge,
-            node: graph.nodes.find((node) => node.id === otherId),
-          };
-        })
-        .filter((connection) => connection.node)
-    : [];
+  const connections = getNodeConnections(graph, selectedNode);
 
   return (
     <Card className="border-0 bg-white shadow-[0_18px_55px_-35px_rgba(15,23,42,.3)] ring-slate-200">
@@ -184,22 +238,18 @@ export function GraphNodeDetail({
               </div>
               {connections.length > 0 ? (
                 <ul className="mt-3 max-h-56 space-y-2 overflow-y-auto pr-1">
-                  {connections.slice(0, 20).map(({ edge, node }) => (
-                    <li key={edge.id}>
+                  {connections.slice(0, 20).map(({ key, label, node }) => (
+                    <li key={key}>
                       <button
                         type="button"
-                        onClick={() => {
-                          if (node) {
-                            onSelectNode(node.id);
-                          }
-                        }}
+                        onClick={() => onSelectNode(node.id)}
                         className="group flex min-h-11 w-full items-center gap-3 rounded-lg border border-slate-200 bg-white px-3 py-2 text-left transition-colors hover:border-cyan-300 hover:bg-cyan-50/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700"
                       >
                         <span className="min-w-0 flex-1 truncate text-sm font-medium text-slate-800">
-                          {node?.label}
+                          {node.label}
                         </span>
                         <span className="shrink-0 rounded-full bg-slate-100 px-2 py-0.5 text-[10px] font-medium tracking-wide text-slate-500 uppercase group-hover:bg-white group-hover:text-cyan-800">
-                          {edge.label}
+                          {label}
                         </span>
                         <ChevronRight
                           className="size-3.5 shrink-0 text-slate-400 group-hover:text-cyan-700"
