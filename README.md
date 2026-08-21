@@ -4,6 +4,11 @@ TalentGraph is a career mobility explorer that helps students, interns, and deve
 
 The primary demo will find up to five paths from a current role to a target role, explain transferable and missing skills at every step, and recommend concrete ways to close each gap.
 
+## Live demo
+
+- Hosted application: https://talent-graph-road.vercel.app/
+- Screen recording: https://www.youtube.com/watch?v=pF7g-x6PqHo
+
 ## Why a graph database?
 
 Career mobility is a traversal problem. A useful answer connects a profile to skills, roles, intermediate transitions, resources, and projects across several hops. CognoDB stores those connections directly and supports bounded variable-length Cypher paths without recursive relational joins.
