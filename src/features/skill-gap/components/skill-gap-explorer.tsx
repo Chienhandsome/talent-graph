@@ -206,6 +206,9 @@ export function SkillGapExplorer() {
           skillsError={skillsError}
           isSubmitting={isSubmitting}
           onTargetRoleChange={(roleId) => {
+            if (roleId === targetRoleId) {
+              return;
+            }
             clearAnalysis();
             setSkillsLoading(Boolean(roleId));
             setSkillsError(null);

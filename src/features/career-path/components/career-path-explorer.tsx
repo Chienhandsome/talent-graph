@@ -265,6 +265,9 @@ export function CareerPathExplorer() {
           skillsError={skillsError}
           isSubmitting={isSubmitting}
           onCurrentRoleChange={(roleId) => {
+            if (roleId === currentRoleId) {
+              return;
+            }
             clearResults();
             setSkillsLoading(Boolean(roleId));
             setSkillsError(null);
@@ -274,6 +277,9 @@ export function CareerPathExplorer() {
             setCurrentRoleId(roleId);
           }}
           onTargetRoleChange={(roleId) => {
+            if (roleId === targetRoleId) {
+              return;
+            }
             clearResults();
             setSkillsLoading(Boolean(currentRoleId && roleId));
             setSkillsError(null);
