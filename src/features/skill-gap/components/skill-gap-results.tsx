@@ -307,11 +307,7 @@ export function SkillGapResults({ result }: { result: SkillGapResult }) {
         </section>
       )}
 
-      <div className="flex items-center gap-2 rounded-xl border border-dashed border-slate-300 bg-white/60 px-4 py-3 text-sm text-slate-500">
-        <Target className="size-4 shrink-0 text-indigo-600" aria-hidden="true" />
-        <span>{result.totalRequiredSkills} mapped skills were compared.</span>
-        <ArrowRight className="ml-auto size-4 shrink-0 text-slate-400" aria-hidden="true" />
-      </div>
+ 
     </div>
   );
 }
