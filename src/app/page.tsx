@@ -233,7 +233,7 @@ export default function Home() {
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
               TalentGraph connects roles, skills, resources, and projects so you
-              can see where you fit today—and what to do next.
+              can see where you fit today and what to do next.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -308,10 +308,7 @@ export default function Home() {
                   </h3>
                   <p className="mt-3 leading-7 text-slate-600">{tool.description}</p>
                   <div className="mt-auto pt-8">
-                    <div className="flex items-center gap-2 text-xs font-medium text-slate-500">
-                      <Check className="size-3.5" aria-hidden="true" />
-                      {tool.detail}
-                    </div>
+
                     <div className={`mt-4 inline-flex items-center gap-2 text-sm font-semibold ${colors.link}`}>
                       Open {tool.title.toLowerCase()}
                       <ArrowRight
@@ -496,18 +493,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <footer className="border-t border-slate-200 bg-[#f7f8f5]">
-        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-7 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
-          <div className="inline-flex items-center gap-2 font-semibold text-slate-800">
-            <span className="flex size-8 items-center justify-center rounded-lg bg-slate-950 text-white">
-              <GitFork className="size-3.5" aria-hidden="true" />
-            </span>
-            TalentGraph
-          </div>
-          <div>Career mobility, modeled as a connected graph.</div>
-        </div>
-      </footer>
     </main>
   );
 }

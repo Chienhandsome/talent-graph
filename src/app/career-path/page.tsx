@@ -24,7 +24,6 @@ export default function CareerPathPage() {
         <div className="relative mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
           <div className="max-w-3xl">
             <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-semibold tracking-wide text-emerald-800 uppercase">
-              <Sparkles className="size-3.5" aria-hidden="true" />
               Graph-powered career planning
             </div>
             <h1 className="max-w-2xl text-4xl leading-[1.08] font-semibold tracking-[-0.04em] text-balance sm:text-5xl">
@@ -34,16 +33,7 @@ export default function CareerPathPage() {
               Compare realistic role transitions, understand which skills carry
               forward, and turn every gap into a focused learning plan.
             </p>
-            <div className="mt-7 flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-600">
-              <span className="inline-flex items-center gap-2">
-                <Route className="size-4 text-emerald-700" aria-hidden="true" />
-                Up to 5 ranked paths
-              </span>
-              <span className="inline-flex items-center gap-2">
-                <GitFork className="size-4 text-indigo-700" aria-hidden="true" />
-                Bounded at 1–4 transitions
-              </span>
-            </div>
+            
           </div>
         </div>
       </section>
