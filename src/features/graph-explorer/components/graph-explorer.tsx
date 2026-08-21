@@ -4,7 +4,9 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   Focus,
   GitFork,
+  Maximize2,
   Minus,
+  Minimize2,
   Plus,
   RefreshCw,
   RotateCcw,
@@ -15,6 +17,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { fetchGraph, fetchRoles } from "@/features/graph-explorer/api";
+import { cn } from "@/lib/utils";
 import type {
   GraphData,
   GraphNodeType,
@@ -62,6 +65,7 @@ export function GraphExplorer() {
   const [hasExplored, setHasExplored] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [graphError, setGraphError] = useState<string | null>(null);
+  const [isGraphFullscreen, setIsGraphFullscreen] = useState(false);
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
   const [visibleNodeTypes, setVisibleNodeTypes] = useState<GraphNodeType[]>([
     ...GRAPH_NODE_TYPES,
@@ -73,6 +77,7 @@ export function GraphExplorer() {
   const graphController = useRef<AbortController | null>(null);
   const lastRequest = useRef<GraphRequest | null>(null);
   const canvasRef = useRef<GraphCanvasHandle | null>(null);
+  const graphFullscreenRef = useRef<HTMLDivElement | null>(null);
   const resultsRegion = useRef<HTMLDivElement | null>(null);
 
   const clearGraph = useCallback(() => {
@@ -121,6 +126,19 @@ export function GraphExplorer() {
     },
     [],
   );
+
+  useEffect(() => {
+    function syncFullscreenState() {
+      setIsGraphFullscreen(
+        document.fullscreenElement === graphFullscreenRef.current,
+      );
+    }
+
+    document.addEventListener("fullscreenchange", syncFullscreenState);
+    return () => {
+      document.removeEventListener("fullscreenchange", syncFullscreenState);
+    };
+  }, []);
 
   const runExplore = useCallback(async (request: GraphRequest) => {
     graphController.current?.abort();
@@ -198,6 +216,20 @@ export function GraphExplorer() {
     );
   }
 
+  async function toggleGraphFullscreen() {
+    const graphElement = graphFullscreenRef.current;
+    if (!graphElement) {
+      return;
+    }
+
+    if (document.fullscreenElement === graphElement) {
+      await document.exitFullscreen();
+      return;
+    }
+
+    await graphElement.requestFullscreen();
+  }
+
   return (
     <section className="mx-auto max-w-[1500px] px-4 py-8 sm:px-6 sm:py-10 lg:px-8 lg:py-12">
       <div className="grid items-start gap-6 xl:grid-cols-[330px_minmax(0,1fr)] xl:gap-8">
@@ -255,8 +287,20 @@ export function GraphExplorer() {
                 </div>
               ) : null}
 
-              <Card className="border-0 bg-white shadow-[0_18px_55px_-35px_rgba(15,23,42,.45)] ring-slate-200">
-                <CardHeader className="border-b border-slate-100 pb-4">
+              <Card
+                ref={graphFullscreenRef}
+                className={cn(
+                  "border-0 bg-white shadow-[0_18px_55px_-35px_rgba(15,23,42,.45)] ring-slate-200",
+                  isGraphFullscreen &&
+                    "h-screen w-screen gap-0 rounded-none py-0 shadow-none ring-0",
+                )}
+              >
+                <CardHeader
+                  className={cn(
+                    "border-b border-slate-100 pb-4",
+                    isGraphFullscreen && "shrink-0 py-4",
+                  )}
+                >
                   <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                     <div>
                       <div className="flex flex-wrap items-center gap-2">
@@ -311,13 +355,41 @@ export function GraphExplorer() {
                       >
                         <RotateCcw aria-hidden="true" />
                       </Button>
+                      <Button
+                        type="button"
+                        size="icon-sm"
+                        variant="outline"
+                        aria-label={
+                          isGraphFullscreen
+                            ? "Exit full screen"
+                            : "View graph full screen"
+                        }
+                        title={
+                          isGraphFullscreen
+                            ? "Exit full screen"
+                            : "View full screen"
+                        }
+                        onClick={() => void toggleGraphFullscreen()}
+                      >
+                        {isGraphFullscreen ? (
+                          <Minimize2 aria-hidden="true" />
+                        ) : (
+                          <Maximize2 aria-hidden="true" />
+                        )}
+                      </Button>
                     </div>
                   </div>
                 </CardHeader>
-                <CardContent className="p-3 sm:p-4">
+                <CardContent
+                  className={cn(
+                    "p-3 sm:p-4",
+                    isGraphFullscreen && "min-h-0 flex-1",
+                  )}
+                >
                   <GraphCanvas
                     ref={canvasRef}
                     graph={graph}
+                    isFullscreen={isGraphFullscreen}
                     selectedNodeId={selectedNodeId}
                     visibleNodeTypes={visibleNodeTypes}
                     visibleRelationshipTypes={visibleRelationshipTypes}

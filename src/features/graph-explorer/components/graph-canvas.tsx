@@ -13,6 +13,7 @@ import {
 } from "react";
 import type cytoscape from "cytoscape";
 
+import { cn } from "@/lib/utils";
 import type {
   GraphData,
   GraphNode,
@@ -30,6 +31,7 @@ export interface GraphCanvasHandle {
 
 interface GraphCanvasProps {
   graph: GraphData;
+  isFullscreen?: boolean;
   selectedNodeId: string | null;
   visibleNodeTypes: GraphNodeType[];
   visibleRelationshipTypes: GraphRelationshipType[];
@@ -226,6 +228,7 @@ export const GraphCanvas = forwardRef<GraphCanvasHandle, GraphCanvasProps>(
   function GraphCanvas(
     {
       graph,
+      isFullscreen = false,
       selectedNodeId,
       visibleNodeTypes,
       visibleRelationshipTypes,
@@ -518,7 +521,10 @@ export const GraphCanvas = forwardRef<GraphCanvasHandle, GraphCanvasProps>(
 
     return (
       <div
-        className="relative h-[480px] w-full overflow-hidden rounded-xl bg-slate-50 lg:h-[620px]"
+        className={cn(
+          "relative w-full overflow-hidden rounded-xl bg-slate-50",
+          isFullscreen ? "h-full rounded-none" : "h-[480px] lg:h-[620px]",
+        )}
         aria-busy={renderState === "loading"}
       >
         {renderState === "ready" ? (
