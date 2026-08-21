@@ -129,6 +129,22 @@ reaches Cytoscape.js.
 | `HAS_SKILL` | 50 |
 | `CURRENT_ROLE` | 5 |
 
+## Create a CognoDB Cloud instance
+
+1. Open the [CognoDB Cloud console](https://console.cognodb.com) and create an account or sign in.
+2. From the **Instances** page, select **Create**.
+3. Enter a descriptive instance name, such as `talent-graph`.
+4. Under **Tier**, select **Free ($0)**. CognoDB allows one free instance per workspace. If the console shows that the free instance is already in use, return to the **Instances** page and use that existing instance instead of selecting a paid tier.
+5. Select an available region close to the application deployment. Before continuing, check the **Summary** panel and confirm that the selected tier and monthly estimate are both free. The **Shared** tier shown in the console starts at a monthly charge and requires a payment method.
+6. Select **Create instance** and wait for provisioning to finish.
+7. When CognoDB displays the connection credentials, copy or download them immediately. The generated password is shown only once. The connection details should include:
+   - A URI in the form `bolt+s://<instance-id>.databases.cognodb.cloud`.
+   - The username `cognodb`.
+   - The generated password.
+8. Keep the instance running while reviewing or demonstrating the application.
+
+Store the credentials only in `.env.local` as described below.
+
 ## Local setup
 
 Requirements:
