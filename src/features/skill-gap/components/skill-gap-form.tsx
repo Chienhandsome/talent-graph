@@ -30,6 +30,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Skeleton } from "@/components/ui/skeleton";
+import { skillImportanceLabel } from "@/lib/skill-importance";
 import { cn } from "@/lib/utils";
 import type { RoleSummary, SkillRequirement } from "@/types/role";
 
@@ -236,7 +237,7 @@ export function SkillGapForm({
                         </span>
                       </span>
                       <span className="shrink-0 text-xs font-medium text-slate-500">
-                        {skill.importance}/5
+                        {skillImportanceLabel(skill.importance)}
                       </span>
                     </button>
                   );

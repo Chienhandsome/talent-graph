@@ -12,6 +12,7 @@ import {
 
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { skillImportanceLabel } from "@/lib/skill-importance";
 import { cn } from "@/lib/utils";
 import type { SkillWithLearning } from "@/types/learning";
 import type { SkillRequirement } from "@/types/role";
@@ -76,7 +77,7 @@ function RecommendationCard({
               </Badge>
             </div>
             <p className="mt-1 text-xs text-slate-500 capitalize">
-              {skill.requiredLevel} level · importance {skill.importance}/5
+              {skill.requiredLevel} level · {skillImportanceLabel(skill.importance)}
             </p>
             <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-600">
               {skill.description}

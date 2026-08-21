@@ -18,6 +18,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { skillImportanceLabel } from "@/lib/skill-importance";
 import { cn } from "@/lib/utils";
 import type {
   CareerPathResult,
@@ -74,7 +75,7 @@ function MissingSkillCard({ skill }: { skill: MissingSkill }) {
         <div>
           <h4 className="font-medium text-slate-900">{skill.name}</h4>
           <p className="mt-1 text-xs text-slate-500">
-            {skill.requiredLevel} level · importance {skill.importance}/5
+            {skill.requiredLevel} level · {skillImportanceLabel(skill.importance)}
           </p>
         </div>
         <Badge variant={skill.essential ? "destructive" : "secondary"}>
